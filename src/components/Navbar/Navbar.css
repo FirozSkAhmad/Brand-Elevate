@@ -1,14 +1,14 @@
 /* Navbar.css */
 
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: Arial, sans-serif;
   background-color: #000;
 }
 
 .navbar {
   background: var(--black-900, #000);
-  border: 2px solid #bdbdbd;
+  border: 1px solid #bdbdbd;
   border-radius: 20px;
   color: #fff;
   display: flex;
@@ -18,18 +18,27 @@ body {
   width: 25%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 10px;
+  border-right: 1px solid #555;
+}
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .menu-container {
   width: 75%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .upper-menu {
-  width: 66.66%;
+  width: 100%;
   display: flex;
+  border-bottom: 1px solid #555;
 }
 
 .upper-menu-item {
@@ -38,13 +47,18 @@ body {
   padding: 15px;
   border-right: 1px solid #555;
 }
-
+.upper-menu-item span {
+  margin: 1rem;
+}
+.menu-image {
+  width: 5rem;
+}
 .upper-menu-item:last-child {
   border-right: none;
 }
 
 .lower-menu {
-  width: 33.33%;
+  width: 100%;
   display: flex;
 }
 
