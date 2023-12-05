@@ -1,0 +1,62 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+.navbar {
+  background: var(--black-900, #000);
+  border: 2px solid #bdbdbd;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+}
+
+.logo-container {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menu-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-menu {
+  width: 66.66%;
+  display: flex;
+}
+
+.upper-menu-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #555;
+}
+
+.upper-menu-item:last-child {
+  border-right: none;
+}
+
+.lower-menu {
+  width: 33.33%;
+  display: flex;
+}
+
+.lower-menu-item {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #555;
+}
+
+.lower-menu-item:last-child {
+  border-right: none;
+}
+
+/* Add additional styling as needed */
