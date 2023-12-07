@@ -1,0 +1,48 @@
+.Hero-container {
+  margin-top: 10px;
+}
+.title-hero {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 186.667px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 192px; /* 102.857% */
+  letter-spacing: -10px;
+}
+.image-container-hero {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.detail-sponsors {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.detail-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 70%;
+  align-self: stretch;
+  color: var(--black-100, #f2f2f2);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 45.333px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 53.333px; /* 117.647% */
+  letter-spacing: -1.333px;
+}
+.sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sponsor {
+  width: 40%; /* Adjust the width as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}

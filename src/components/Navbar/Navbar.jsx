@@ -1,13 +1,13 @@
-import React from "react";
-import "./Navbar.css"; // Assuming you create a separate CSS file for styling
+import React, { useState } from "react";
+import "./Navbar.css";
 import Branding from "../../assets/Branding.svg";
 import Menu from "../../assets/Union.svg";
-
+// import Hamburger from "hamburger-react";
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-container">
-        {/* Your logo goes here */}
+        {/*  logo goes here */}
         <img src={Branding} alt="Logo" />
       </div>
       <div className="menu-container">

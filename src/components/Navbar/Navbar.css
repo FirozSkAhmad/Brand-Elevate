@@ -7,8 +7,11 @@ body {
 }
 
 .navbar {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   background: var(--black-900, #000);
-  border: 1px solid #bdbdbd;
+  border: 1px solid var(--black-700, #282828);
   border-radius: 20px;
   color: #fff;
   display: flex;
@@ -20,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  border-right: 1px solid #555;
+  border-right: 1px solid var(--black-700, #282828);
 }
 .logo-container img {
   max-width: 100%;
@@ -38,14 +41,14 @@ body {
 .upper-menu {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid var(--black-700, #282828);
 }
 
 .upper-menu-item {
   flex: 1;
   text-align: center;
   padding: 15px;
-  border-right: 1px solid #555;
+  border-right: 1px solid var(--black-700, #282828);
 }
 .upper-menu-item span {
   margin: 1rem;
@@ -53,6 +56,7 @@ body {
 .menu-image {
   width: 5rem;
 }
+
 .upper-menu-item:last-child {
   border-right: none;
 }
@@ -66,11 +70,9 @@ body {
   flex: 1;
   text-align: center;
   padding: 15px;
-  border-right: 1px solid #555;
+  border-right: 1px solid var(--black-700, #282828);
 }
 
 .lower-menu-item:last-child {
   border-right: none;
 }
-
-/* Add additional styling as needed */
