@@ -1,48 +1,113 @@
 .Hero-container {
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 0 10rem;
 }
+
 .title-hero {
-  color: var(--White, #fff);
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
-  font-size: 186.667px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 192px; /* 102.857% */
-  letter-spacing: -10px;
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9rem;
 }
+
+.title-hero .line {
+  width: 100%;
+  height: 187px;
+  position: relative;
+  overflow: hidden;
+}
+
+.line span {
+  position: absolute;
+  font-family: Inter;
+  font-size: 187px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -10px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  transform: skewY(7);
+  transform: translateY(100%);
+
+}
+
 .image-container-hero {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
+
+.image-container-hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .detail-sponsors {
-  margin-top: 50px;
+  margin: 16rem 0;
   display: flex;
-  justify-content: space-around;
-}
-.detail-text {
-  margin-left: 20px;
-  margin-right: 20px;
-  max-width: 70%;
-  align-self: stretch;
-  color: var(--black-100, #f2f2f2);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
-  font-size: 45.333px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 53.333px; /* 117.647% */
-  letter-spacing: -1.333px;
-}
-.sponsor-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.sponsor {
-  width: 40%; /* Adjust the width as needed */
-  margin-bottom: 10px; /* Adjust the margin as needed */
+.detail-text {
+  width: 60%;
+}
+
+.sponsor-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.spn_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-text p {
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: -1.33px;
+  text-align: left;
+  color: #fff;
+}
+
+.sponsor1 {
+  width: 230px;
+  height: 62px;
+}
+
+.sponsor2 {
+  width: 115px;
+  height: 40px;
+}
+
+.sponsor3 {
+  width: 176px;
+  height: 56px;
+}
+
+.sponsor4 {
+  width: 116px;
+  height: 70px;
+}
+
+.sponsor5 {
+  width: 161px;
+  height: 56px;
+}
+
+.sponsor6 {
+  width: 216px;
+  height: 109px;
+}
+.span_clm img{
+  width: 100%;
+  object-fit: cover;
 }

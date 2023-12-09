@@ -1,47 +1,80 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
 import "./Hero.css";
-import Image from "../../assets/Temp-Hero_img.svg";
-import Krate from "../../assets/sponsers/KRATE.svg";
-import Kalo from "../../assets/sponsers/kalo.svg";
-import Massui from "../../assets/sponsers/Massui.svg";
-import Kinua from "../../assets/sponsers/Kinua.svg";
-import Altall from "../../assets/sponsers/altall.svg";
-import Tano from "../../assets/sponsers/tano.svg";
+
 
 const Hero = () => {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.to(".line span", 1.8, {
+      y: 0,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      }
+    })
+  }, []);
   return (
     <div className="Hero-container">
-      <h1 className="title-hero">Welcome To Brand Elevate</h1>
+      <div className="title-hero">
+        <div class="line">
+          <span>Welcome To</span>
+        </div>
+        <div class="line">
+          <span>Brand Elevate</span>
+        </div>
+      </div>
       <div className="image-container-hero">
-        <img src={Image} alt="" />
+        <img src="assets/images/hero-img.png" alt="" />
       </div>
       <div className="detail-sponsors">
         <div className="detail-text">
-          <h4>
+          <p>
             We are passionate about creating visually stunning and functional
             solutions that communicate effectively. I have a keen eye for detail
             and a deep understanding of design principles, which I use to
             deliver projects that exceed my clients' expectations.
-          </h4>
+          </p>
         </div>
         <div class="sponsor-container">
-          <div class="sponsor">
-            <img src={Krate} alt="Sponsor 1" />
+          <div className='spn_row'>
+            <div className='span_clm'>
+              <div class="sponsor1">
+                <img src="assets/images/fuelgenie.png" alt="fuelgenie" />
+              </div>
+            </div>
+            <div className='span_clm'>
+              <div class="sponsor2">
+                <img src="assets/images/Kinua.png" alt="Kinua" />
+              </div>
+            </div>
           </div>
-          <div class="sponsor">
-            <img src={Kalo} alt="Sponsor 2" />
+          <div className='spn_row'>
+            <div className='span_clm'>
+              <div class="sponsor3">
+                <img src="assets/images/massui.png" alt="massui" />
+              </div>
+            </div>
+            <div className='span_clm'>
+              <div class="sponsor4">
+                <img src="assets/images/varunraj.png" alt="varunraj" />
+              </div>
+            </div>
           </div>
-          <div class="sponsor">
-            <img src={Massui} alt="Sponsor 3" />
-          </div>
-          <div class="sponsor">
-            <img src={Kinua} alt="Sponsor 4" />
-          </div>
-          <div class="sponsor">
-            <img src={Altall} alt="Sponsor 5" />
-          </div>
-          <div class="sponsor">
-            <img src={Tano} alt="Sponsor 6" />
+          <div className='spn_row'>
+            <div className='span_clm'>
+              <div class="sponsor5">
+                <img src="assets/images/altall.png" alt="altall" />
+              </div>
+            </div>
+            <div className='span_clm'>
+              <div class="sponsor6">
+                <img src="assets/images/jy.png" alt="jy" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -36,10 +36,10 @@ const Header = () => {
         </div>
         <div className="btm_Menu-Con">
           <div className="blg_menu-item">
-            <a href="#">Blog</a>
+            <a href="#"><span><img src="assets/images/pen.png"></img></span>Blog</a>
           </div>
           <div className="gt_menu-item">
-            <a href="#">Get In Touch</a>
+            <a href="#"><span><img src="assets/images/calendar.png"></img></span>Get In Touch</a>
           </div>
         </div>
       </div>

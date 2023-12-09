@@ -1,7 +1,8 @@
-:root{
+:root {
     font-size: 10px;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,4 +11,32 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #000;
-  }
+}
+
+html {
+    cursor: none;
+}
+
+[data-cursor] {
+    border-radius: 50%;
+}
+
+[data-cursor="0"] {
+    background-color: #fff;
+    height: 5px;
+    width: 5px;
+}
+
+[data-cursor="1"] {
+    border: 2px solid #fff;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease, left 0.3s linear, top 0.3s linear;
+}
+
+.cursor-hover--a  {
+    height: 120px;
+    width: 120px;
+    mix-blend-mode: difference;
+    background-color: #fff;
+}
