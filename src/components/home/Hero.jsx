@@ -20,10 +20,10 @@ const Hero = () => {
   return (
     <div className="Hero-container">
       <div className="title-hero">
-        <div class="line">
+        <div className="line">
           <span>Welcome To</span>
         </div>
-        <div class="line">
+        <div className="line">
           <span>Brand Elevate</span>
         </div>
       </div>
@@ -39,39 +39,39 @@ const Hero = () => {
             deliver projects that exceed my clients' expectations.
           </p>
         </div>
-        <div class="sponsor-container">
+        <div className="sponsor-container">
           <div className='spn_row'>
             <div className='span_clm'>
-              <div class="sponsor1">
+              <div className="sponsor1">
                 <img src="assets/images/fuelgenie.png" alt="fuelgenie" />
               </div>
             </div>
             <div className='span_clm'>
-              <div class="sponsor2">
+              <div className="sponsor2">
                 <img src="assets/images/Kinua.png" alt="Kinua" />
               </div>
             </div>
           </div>
           <div className='spn_row'>
             <div className='span_clm'>
-              <div class="sponsor3">
+              <div className="sponsor3">
                 <img src="assets/images/massui.png" alt="massui" />
               </div>
             </div>
             <div className='span_clm'>
-              <div class="sponsor4">
+              <div className="sponsor4">
                 <img src="assets/images/varunraj.png" alt="varunraj" />
               </div>
             </div>
           </div>
           <div className='spn_row'>
             <div className='span_clm'>
-              <div class="sponsor5">
+              <div className="sponsor5">
                 <img src="assets/images/altall.png" alt="altall" />
               </div>
             </div>
             <div className='span_clm'>
-              <div class="sponsor6">
+              <div className="sponsor6">
                 <img src="assets/images/jy.png" alt="jy" />
               </div>
             </div>

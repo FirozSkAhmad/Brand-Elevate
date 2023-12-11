@@ -1,7 +1,5 @@
-import React, {useEffect} from "react";
-import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Header from "./components/Header/Header";
+import React, { useEffect } from "react";
+import Home from "./components/home/Home";
 
 
 import Cursor from 'custom-cursor';
@@ -44,8 +42,7 @@ function App() {
   }, []);
   return (
     <>
-      <Header />
-      <Hero />
+      <Home></Home>
     </>
   );
 }

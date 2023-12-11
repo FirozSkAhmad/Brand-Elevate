@@ -1,0 +1,173 @@
+/* html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    min-height: calc(100% - 10rem);
+    background: rgba(57, 120, 239, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 5rem 0;
+} */
+
+.acc__Wrapper {
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    position: relative;
+}
+
+.accordion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: #fff;
+    max-width: 30rem;
+    border-radius: 0.4rem; */
+    overflow: hidden;
+    /* box-shadow: 0 0 0.8rem 0.1rem rgba(15, 72, 179, 0.06), 0 20px 30px -10px rgba(15, 72, 179, 0.2); */
+}
+
+.accordion-list__item {
+    border-bottom: 1px solid #282828;
+}
+
+
+.accordion-item--opened .accordion-item__inner {
+    max-height: 100rem;
+    transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    transition-duration: 0.5s;
+    transition-property: max-height;
+}
+
+.accordion-item--opened .accordion-item__content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: opacity, transform;
+}
+
+.accordion-item__line {
+    display: block;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item__title {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1.33px;
+    text-align: left;
+    color: #fff;
+}
+
+.acc_Ttl-cnt {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.acc_img {
+    width: 200px;
+    height: 53px;
+    border-radius: 24px;
+}
+
+.acc_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.accordion-item__icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+    color: #D4145A;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABGklEQVR4Ae3RAcZCQRiF4buDfwshBGi+2UQgcIGAVtpSIuS/KyilG+UTcbk6zIH3GQBm3mM6AAAAAAAAAACA+eqf/yZBXcV/2XeCVPYx1FXj/FjGUMd45AQp/1HHGGLZNL+e61jHnKDmv8652YT1IvPfE2LX/Sh27/ycsF60yT/lk58JYn6eU4MJccjnlAmZ/33i0OAH4jg9Qcw/5g9YJpS+m6n0xvzpCfVe+nn59S7kGyYo+YYJWz3fO+E2PaFs9XzPhMy/6fmWCXq+YUJs9HzrhLh+JsQmrnq+bYKeb52g53snXPR88wQ93z9Bz/dP0PP9E/R89wQ93zpBz7dO0POtE/R86wQ93zpBzzdP+MoHAAAAAAAAAADAExTnTW20AtjhAAAAAElFTkSuQmCC); */
+    /* opacity: 0.6; */
+}
+
+.accordion-item__inner {
+    max-height: 0;
+    overflow: hidden;
+    text-transform: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition-duration: 0.5s;
+    transition-property: max-height;
+    z-index: 1;
+    position: relative;
+}
+
+.acc_icn {
+    position: relative;
+    width: 53px;
+    height: 53px;
+}
+
+
+
+.acc_icn::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    /* margin-top: -2px; */
+    background-color: #9D9FA1;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.acc_icn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 2px;
+    /* margin-top: -2px; */
+    background-color: #9D9FA1;
+}
+
+
+.accordion-item--opened .acc_icn::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.accordion-item__content {
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition-timing-function: linear, ease;
+    transition-duration: 0.1s;
+    transition-property: opacity, transform;
+    transition-delay: 0.5s;
+    padding: 0 80px 42px 242px;
+}
+
+.accordion-item__paragraph {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 53px;
+    letter-spacing: -1.33px;
+    text-align: left;
+    color: #fff;
+}

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "./Header.css";
-import Branding from "../../assets/Branding.svg";
-import Menu from "../../assets/Union.svg";
-// import Hamburger from "hamburger-react";
 const Header = () => {
   return (
 
@@ -10,7 +7,7 @@ const Header = () => {
       <div className="navbar">
         <div className="logo_Con">
           <div className="logo">
-            <img src={Branding} alt="Logo" />
+            <img src="assets/images/logo.png" alt="Logo" />
           </div>
         </div>
         <div className="top_Menu-con">
@@ -31,7 +28,7 @@ const Header = () => {
         </div>
         <div className="ham_Con">
           <div className="hamburger">
-            <img src={Menu} alt="Menu" className="menu-image" />
+            <img src="assets/images/ham.png" alt="Menu" className="menu-image" />
           </div>
         </div>
         <div className="btm_Menu-Con">
