@@ -1,0 +1,136 @@
+.footer__Wrap {
+    padding: 10rem;
+    position: relative;
+}
+
+.footer_Sec {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "l t t t t t t t t t t t"
+        "l f f f f f f f f f f f";
+    border: 2px solid #282828;
+    border-radius: 42px;
+}
+
+.footer_Logo-s {
+    grid-area: l;
+    padding: 9rem 10rem;
+    border-right: 2px solid #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_Sec a {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #BDBDBD;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ft_logo {
+    width: 164px;
+    height: 100px;
+}
+
+.ft_logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.ft_Top-s {
+    grid-area: t;
+    display: flex;
+    border-bottom: 2px solid #282828;
+}
+
+.ft_menu-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+    border-right: 2px solid #282828;
+}
+
+.ft_email {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft_email a {
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: -0.8px;
+    text-align: center;
+}
+
+.ft_Btm-s {
+    grid-area: f;
+    display: flex;
+}
+
+.ft_Blog {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #282828;
+}
+
+.ft_Social-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    border-right: 2px solid #282828;
+}
+
+.ft_Social-item a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282828;
+    border-radius: 100%;
+}
+
+.ft_Copyright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft_Copyright span {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+.ft_Blog span {
+    width: 24px;
+    height: 24px;
+}
+
+.ft_Blog span img {
+    width: 100%;
+    object-fit: cover;
+}

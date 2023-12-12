@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import "./Hero.css";
+import TextReveal from '../TextReveal';
 
-
+const text="We are passionate about creating visually stunning and functional solutions that communicate effectively. I have a keen eye for detail and a deep understanding of design principles, which I use to deliver projects that exceed my clients' expectations."
 const Hero = () => {
   useEffect(() => {
     const tl = gsap.timeline();
@@ -28,15 +29,16 @@ const Hero = () => {
         </div>
       </div>
       <div className="image-container-hero">
-        <img src="assets/images/hero-img.png" alt="" />
+        {/* <img src="assets/images/hero-img.png" alt="" /> */}
+        <video loop playsInline autoPlay muted className='d_vd'>
+          <source src="assets/videos/web_site.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="detail-sponsors">
         <div className="detail-text">
+          <TextReveal text={text}></TextReveal>
           <p>
-            We are passionate about creating visually stunning and functional
-            solutions that communicate effectively. I have a keen eye for detail
-            and a deep understanding of design principles, which I use to
-            deliver projects that exceed my clients' expectations.
+            
           </p>
         </div>
         <div className="sponsor-container">
