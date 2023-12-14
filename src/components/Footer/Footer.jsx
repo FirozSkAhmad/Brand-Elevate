@@ -34,13 +34,13 @@ const Footer = () => {
             <a href="#"><span><img src="assets/images/pen.png"></img></span>Blog</a>
           </div>
           <div className='ft_Social-item'>
-            <a href="">
+            <a href="" target="_blank" rel="noopener">
               <i className="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="">
+            <a href="" target="_blank" rel="noopener">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="">
+            <a href="" target="_blank" rel="noopener">
               <i className="fa-brands fa-twitter"></i>
             </a>
           </div>

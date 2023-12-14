@@ -1,20 +1,8 @@
-import React, { useEffect } from 'react';
-import Header from '../Header/Header';
-import Hero from './Hero';
-import Services from './Services';
-import RecentWork from './RecentWork';
-import OurTeam from './OurTeam';
-import Cta from './Cta';
-import Footer from '../Footer/Footer';
+import React,{useEffect} from 'react';
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-// import CursorEffect from '../CursorEffect';
-import Cursor from 'custom-cursor';
-new Cursor({
-  count: 2,
-  targets: ['a'],
-})
-
-const Home = () => {
+const AboutUs = () => {
   useEffect(() => {
     const initializeCursor = () => {
       const links = document.querySelectorAll('a');
@@ -45,17 +33,12 @@ const Home = () => {
   }, []);
   return (
     <>
-      {/* <CursorEffect></CursorEffect> */}
       <Header></Header>
-      <Hero></Hero>
-      <Services></Services>
-      <RecentWork></RecentWork>
-      <OurTeam></OurTeam>
-      <Cta></Cta>
+      <div>About us</div>
       <Footer></Footer>
-      {/* <div data-cursor="1"></div> */}
     </>
+
   )
 }
 
-export default Home;
+export default AboutUs

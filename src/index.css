@@ -20,6 +20,7 @@ html {
 
 [data-cursor] {
     border-radius: 50%;
+    z-index: 9999;
 }
 
 [data-cursor="0"] {
@@ -35,9 +36,13 @@ html {
     transition: all 0.15s ease, left 0.3s linear, top 0.3s linear;
 }
 
-.cursor-hover--a  {
+.cursor-hover--a{
     height: 120px;
     width: 120px;
     mix-blend-mode: difference;
     background-color: #fff;
+}
+
+.cursor-hover--a [data-cursor="0"]{
+    background-color: #000;
 }

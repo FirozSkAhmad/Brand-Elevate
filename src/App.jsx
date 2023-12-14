@@ -1,49 +1,32 @@
 import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./components/home/Home";
+import Routing from "./Routing";
+import Portfolio from "./components/portfolio/Portfolio";
+// import { CursorProvider } from "./context/CursorContext";
+import AboutUs from "./components/about/AboutUs";
+import Blog from "./components/blog/Blog";
+import Terms from "./components/terms/Terms";
+import Team from "./components/team/Team";
+import ContactUs from "./components/contact/ContactUs";
 
-
-import Cursor from 'custom-cursor';
-
-new Cursor({
-  count: 2,
-  targets: ['a'],
-
-})
 
 function App() {
 
-  useEffect(() => {
-    const initializeCursor = () => {
-      const links = document.querySelectorAll('a');
-      const cursor = document.querySelector('[data-cursor="1"]');
-
-      links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-          cursor.classList.add('cursor-hover--a');
-        });
-
-        link.addEventListener('mouseleave', () => {
-          cursor.classList.remove('cursor-hover--a');
-        });
-      });
-    };
-
-    initializeCursor();
-
-    // Clean up event listeners when the component unmounts
-    return () => {
-      const links = document.querySelectorAll('a');
-
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', () => { });
-        link.removeEventListener('mouseleave', () => { });
-      });
-    };
-  }, []);
   return (
-    <>
-      <Home></Home>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Routing />} />
+        <Route index element={<Home />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="terms" element={<Terms />} />
+        <Route path="team" element={<Team />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

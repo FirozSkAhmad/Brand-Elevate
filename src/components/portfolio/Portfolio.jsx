@@ -1,20 +1,17 @@
 import React, { useEffect } from 'react';
+import "./portfolio.css";
 import Header from '../Header/Header';
-import Hero from './Hero';
-import Services from './Services';
-import RecentWork from './RecentWork';
-import OurTeam from './OurTeam';
-import Cta from './Cta';
 import Footer from '../Footer/Footer';
 
-// import CursorEffect from '../CursorEffect';
-import Cursor from 'custom-cursor';
-new Cursor({
-  count: 2,
-  targets: ['a'],
-})
+// import Cursor from 'custom-cursor';
 
-const Home = () => {
+// new Cursor({
+//   count: 2,
+//   targets: ['a'],
+
+// })
+
+const Portfolio = () => {
   useEffect(() => {
     const initializeCursor = () => {
       const links = document.querySelectorAll('a');
@@ -45,17 +42,12 @@ const Home = () => {
   }, []);
   return (
     <>
-      {/* <CursorEffect></CursorEffect> */}
       <Header></Header>
-      <Hero></Hero>
-      <Services></Services>
-      <RecentWork></RecentWork>
-      <OurTeam></OurTeam>
-      <Cta></Cta>
+      <div>Portfolio</div>
       <Footer></Footer>
-      {/* <div data-cursor="1"></div> */}
     </>
+
   )
 }
 
-export default Home;
+export default Portfolio
