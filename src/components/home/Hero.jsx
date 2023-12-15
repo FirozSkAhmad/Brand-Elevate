@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <div className="image-container-hero">
         {/* <img src="assets/images/hero-img.png" alt="" /> */}
-        <video loop playsInline autoPlay muted className='d_vd'>
+        <video loop playsInline autoPlay muted>
           <source src="assets/videos/web_site.mp4" type="video/mp4" />
         </video>
       </div>
