@@ -45,6 +45,11 @@
   object-fit: cover;
 }
 
+.image-container-hero video {
+  width: 100%;
+  object-fit: cover;
+}
+
 .detail-sponsors {
   margin: 16rem 0;
   display: flex;
@@ -107,7 +112,8 @@
   width: 216px;
   height: 109px;
 }
-.span_clm img{
+
+.span_clm img {
   width: 100%;
   object-fit: cover;
 }
