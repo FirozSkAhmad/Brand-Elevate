@@ -43,7 +43,16 @@ const Portfolio = () => {
   return (
     <>
       <Header></Header>
-      <div>Portfolio</div>
+      <div className='portfolio__Wrap'>
+        <div className='port_Mn-sec'>
+          <div className='port_mn-ttl'>
+            <h2>Case Studies</h2>
+          </div>
+          <div className='port_mn-para'>
+            <p>Ut nunc, dui sit sit nisl, cras velit lorem. Laoreet gravida adipiscing augue sit.</p>
+          </div>
+        </div>
+      </div>
       <Footer></Footer>
     </>
 

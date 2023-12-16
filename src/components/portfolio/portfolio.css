@@ -1,0 +1,41 @@
+.portfolio__Wrap {
+    position: relative;
+    padding: 0 10rem;
+}
+
+.port_Mn-sec {
+    display: flex;
+    align-items: center;
+    border: 2px solid #282828;
+    border-radius: 32px;
+}
+
+.port_mn-ttl {
+    padding: 5rem 10rem;
+    width: 35%;
+    border-right: 2px solid #282828;
+}
+
+.port_mn-para {
+    width: 65%;
+}
+
+.port_mn-ttl h2 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.port_mn-para p {
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: -0.8px;
+    text-align: left;
+    padding-left: 7rem;
+    padding-right: 27%;
+}

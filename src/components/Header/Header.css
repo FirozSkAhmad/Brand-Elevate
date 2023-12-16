@@ -9,7 +9,7 @@
   grid-template-areas: "a b b b b b b b b b b c"
     "a d d d d d d d d d d d";
   border: 2px solid #282828;
-  border-radius: 25px;
+  border-radius: 32px;
 }
 
 .logo_Con {

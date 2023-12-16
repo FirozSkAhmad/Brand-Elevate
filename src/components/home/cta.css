@@ -2,13 +2,15 @@
     position: relative;
     padding: 10rem 10rem 0;
 }
-.cta__S{
+
+.cta__S {
     background-image: url("../../../public/assets/images/cta.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 42px;
 }
+
 .cta__content {
     display: flex;
     flex-direction: column;
@@ -37,7 +39,7 @@
     margin-top: 20px;
 }
 
-.cta_Btn button {
+.cta_Btn a {
     font-family: Inter;
     font-size: 21px;
     font-weight: 600;
@@ -50,4 +52,17 @@
     padding: 16px 37px;
     border-radius: 50px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta_Btn a span {
+    width: 26px;
+    height: 26px;
+}
+
+.cta_Btn img {
+    width: 100%;
+    object-fit: cover;
 }

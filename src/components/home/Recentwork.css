@@ -23,7 +23,7 @@
     gap: 42px;
 }
 
-.rec_Ttl h4 {
+.rec_Ttl a {
     font-family: Inter;
     font-size: 37px;
     font-weight: 600;
@@ -32,6 +32,8 @@
     text-align: left;
     color: #fff;
     padding: 53px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .rec_Content {
@@ -60,7 +62,8 @@
     align-items: center;
 }
 
-.rec_Btn button {
+.rec_Btn a {
+    /* display: inline-block; */
     width: 100%;
     color: #fff;
     background: transparent;

@@ -17,7 +17,7 @@ const RecentWork = () => {
                                     <img src='assets/images/vr.png' alt='varun raj'></img>
                                 </div>
                                 <div className='rec_Ttl'>
-                                    <h4>Varun Raj</h4>
+                                    <a>Varun Raj</a>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ const RecentWork = () => {
                                     <img src='assets/images/sw.png' alt='Swayamvar'></img>
                                 </div>
                                 <div className='rec_Ttl'>
-                                    <h4>Swayamvar</h4>
+                                    <a>Swayamvar</a>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ const RecentWork = () => {
                                     <img src='assets/images/jyvs.png' alt='jyvs'></img>
                                 </div>
                                 <div className='rec_Ttl'>
-                                    <h4>JY VS</h4>
+                                    <a>JY VS</a>
                                 </div>
                             </div>
                         </div>
@@ -49,14 +49,14 @@ const RecentWork = () => {
                                     <img src='assets/images/fl.png' alt='fl'></img>
                                 </div>
                                 <div className='rec_Ttl'>
-                                    <h4>Fuel Genie</h4>
+                                    <a>Fuel Genie</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='rec_Btn'>
-                    <button><span>View all work</span><span className='arrow-up-right'><img src="assets/images/arrow-up-right.png" alt="arrow-up-right" /></span></button>
+                    <a><span>View all work</span><span className='arrow-up-right'><img src="assets/images/arrow-up-right.png" alt="arrow-up-right" /></span></a>
                 </div>
             </div>
         </div>

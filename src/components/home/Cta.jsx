@@ -11,7 +11,12 @@ const Cta = () => {
                         <p>Visually attractive design from concept to final result. We create solutions that are bold and forward-looking.</p>
                     </div>
                     <div className='cta_Btn'>
-                        <button>Free Consultation</button>
+                        <a>
+                            <span>
+                                <img src='assets/images/b-calender.png' alt='calender'></img>
+                            </span>
+                            Free Consultation
+                        </a>
                     </div>
                 </div>
             </div>

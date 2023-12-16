@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import "./Hero.css";
 import TextReveal from '../TextReveal';
 
-const text="We are passionate about creating visually stunning and functional solutions that communicate effectively. I have a keen eye for detail and a deep understanding of design principles, which I use to deliver projects that exceed my clients' expectations."
+const text = "We are passionate about creating visually stunning and functional solutions that communicate effectively. I have a keen eye for detail and a deep understanding of design principles, which I use to deliver projects that exceed my clients' expectations."
 const Hero = () => {
   useEffect(() => {
     const tl = gsap.timeline();
@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="detail-text">
           <TextReveal text={text}></TextReveal>
           <p>
-            
+
           </p>
         </div>
         <div className="sponsor-container">
@@ -50,31 +50,31 @@ const Hero = () => {
             </div>
             <div className='span_clm'>
               <div className="sponsor2">
-                <img src="assets/images/Kinua.png" alt="Kinua" />
+                <img src="assets/images/kj.png" alt="kj" />
               </div>
             </div>
           </div>
           <div className='spn_row'>
             <div className='span_clm'>
               <div className="sponsor3">
-                <img src="assets/images/massui.png" alt="massui" />
+                <img src="assets/images/jy.png" alt="jy" />
               </div>
             </div>
             <div className='span_clm'>
               <div className="sponsor4">
-                <img src="assets/images/varunraj.png" alt="varunraj" />
+                <img src="assets/images/rr.png" alt="rr" />
               </div>
             </div>
           </div>
           <div className='spn_row'>
             <div className='span_clm'>
               <div className="sponsor5">
-                <img src="assets/images/altall.png" alt="altall" />
+                <img src="assets/images/sb.png" alt="sb" />
               </div>
             </div>
             <div className='span_clm'>
               <div className="sponsor6">
-                <img src="assets/images/jy.png" alt="jy" />
+                <img src="assets/images/gp.png" alt="gp" />
               </div>
             </div>
           </div>
