@@ -1,6 +1,8 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+
+import "./style.css";
 
 const Team = () => {
   useEffect(() => {
@@ -33,10 +35,22 @@ const Team = () => {
   }, []);
   return (
     <>
-            <Header></Header>
-            <div>Team</div>
-            <Footer></Footer>
-        </>
+      <Header></Header>
+      <div className='team_page-wrap'>
+        <div className='team_Mn-wrap'>
+          <div className='port_Mn-sec'>
+            <div className='port_mn-ttl'>
+              <h2>Our Team</h2>
+            </div>
+            <div className='port_mn-para'>
+              <p>We are passionate about creating visually stunning and functional solutions that communicate effectively.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <Footer></Footer>
+    </>
   )
 }
 

@@ -1,5 +1,8 @@
 .portfolio__Wrap {
     position: relative;
+}
+
+.port_Mn-wrap {
     padding: 0 10rem;
 }
 
@@ -38,4 +41,76 @@
     text-align: left;
     padding-left: 7rem;
     padding-right: 27%;
+}
+
+.port_Work-wrap {
+    position: relative;
+    padding: 0 10rem;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.port-work-s {
+    position: relative;
+}
+
+.port-wrk-img {
+    position: relative;
+}
+
+.port-wrk-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.port-work-cta {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    background: #000;
+    border-radius: 32px;
+}
+
+.port-work-cta a {
+    text-decoration: none;
+    width: 534px;
+    height: 168px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.port-work-n {
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+}
+
+.port_see {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.port-arr {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+}
+
+.port-arr img {
+    width: 100%;
+    object-fit: cover;
 }

@@ -14,15 +14,15 @@ const TestimonialSlider = () => {
             speed: 500,
             grabCursor: true,
             freeMode: false,
-            // loop: true,
+            loop: true,
             mousewheel: false,
             keyboard: {
                 enabled: true,
             },
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: false,
@@ -66,12 +66,11 @@ const TestimonialSlider = () => {
                                 </div>
                                 <div className="quote">
                                     <p>
-                                        "Working with Project D has been a game-changer for our
-                                        business. Their social media strategies have significantly
-                                        increased our online presence, resulting in a steady stream
-                                        of new customers. They truly understand our target audience
-                                        and consistently deliver engaging content that resonates
-                                        with them. Highly recommended!"
+                                        "I've been using Brand Elevate for the past year and
+                                        I'm absolutely loving it. It's a powerful design tool
+                                        that's easy to use and collaborate with others on.
+                                        I especially love the real-time collaboration feature,
+                                        which makes it so easy to get feedback from my team.”
                                     </p>
                                 </div>
                                 <div className="auth_brand">
@@ -93,12 +92,11 @@ const TestimonialSlider = () => {
                                 </div>
                                 <div className="quote">
                                     <p>
-                                        "Working with Project D has been a game-changer for our
-                                        business. Their social media strategies have significantly
-                                        increased our online presence, resulting in a steady stream
-                                        of new customers. They truly understand our target audience
-                                        and consistently deliver engaging content that resonates
-                                        with them. Highly recommended!"
+                                        "I've been using Brand Elevate for the past year and
+                                        I'm absolutely loving it. It's a powerful design tool
+                                        that's easy to use and collaborate with others on.
+                                        I especially love the real-time collaboration feature,
+                                        which makes it so easy to get feedback from my team.”
                                     </p>
                                 </div>
                                 <div className="auth_brand">
@@ -120,12 +118,11 @@ const TestimonialSlider = () => {
                                 </div>
                                 <div className="quote">
                                     <p>
-                                        "Working with Project D has been a game-changer for our
-                                        business. Their social media strategies have significantly
-                                        increased our online presence, resulting in a steady stream
-                                        of new customers. They truly understand our target audience
-                                        and consistently deliver engaging content that resonates
-                                        with them. Highly recommended!"
+                                        "I've been using Brand Elevate for the past year and
+                                        I'm absolutely loving it. It's a powerful design tool
+                                        that's easy to use and collaborate with others on.
+                                        I especially love the real-time collaboration feature,
+                                        which makes it so easy to get feedback from my team.”
                                     </p>
                                 </div>
                                 <div className="auth_brand">
