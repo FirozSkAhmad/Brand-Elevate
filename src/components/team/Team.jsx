@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 import Cta from "../home/Cta";
+import Lenis from '@studio-freight/lenis';
 
 import "./style.css";
 
@@ -35,6 +36,21 @@ const Team = () => {
       });
     };
   }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on('scroll', (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  },[])
   return (
     <>
       <Header></Header>

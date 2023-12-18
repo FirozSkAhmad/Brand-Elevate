@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 import ContactForm from './ContactForm';
-
+import Lenis from '@studio-freight/lenis';
 import "./style.css";
 
 const ContactUs = () => {
@@ -35,6 +35,21 @@ const ContactUs = () => {
       });
     };
   }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on('scroll', (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  },[])
   return (
     <>
       <Header></Header>

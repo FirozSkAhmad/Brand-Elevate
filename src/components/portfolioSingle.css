@@ -1,0 +1,166 @@
+.port_Mn-back {
+    padding: 0 10rem;
+}
+
+.port_Mn-back button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+.back_logo {
+    width: 26px;
+    height: 26px;
+}
+
+.back_logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.port_sn-mn {
+    padding: 3rem 10rem 5rem;
+}
+
+.sn_mn-ttl {
+    display: flex;
+    border: 2px solid #282828;
+    border-radius: 32px;
+}
+
+.sn_hd {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 42px;
+    border-right: 2px solid #282828;
+}
+
+.sn_hd h2 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.sn_para {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 42px;
+    border-right: 2px solid #282828;
+}
+
+.sn_para p {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+.sn_prop {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+    gap: 10px;
+}
+
+.sn_p-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sn_p-cl {
+    display: flex;
+    align-items: center;
+}
+
+.sn_p-icn {
+    width: 32px;
+    height: 32px;
+}
+
+.sn_p-icn img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sn_tag {
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.port_sn-con {
+    padding: 0 10rem 10rem;
+}
+
+.port_sn-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.port_sn-text {
+    display: flex;
+    gap: 0px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.port_sn-text h4 {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: -1.3px;
+    text-align: left;
+    flex: 1;
+}
+
+.port_sn-text p {
+    flex: 1;
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+.port_sn-extra {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.port_sn-extra p {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #DDDDDD;
+    width: 60%;
+    /* margin-top: 5rem; */
+}

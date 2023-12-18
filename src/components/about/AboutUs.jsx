@@ -6,6 +6,8 @@ import TestimonialSlider from './TestimonialSlider';
 import OurTeam from "../home/OurTeam";
 import Cta from "../home/Cta";
 
+import Lenis from '@studio-freight/lenis';
+
 const AboutUs = () => {
   useEffect(() => {
     const initializeCursor = () => {
@@ -35,6 +37,21 @@ const AboutUs = () => {
       });
     };
   }, []);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on('scroll', (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  },[])
   return (
     <>
       <Header></Header>
