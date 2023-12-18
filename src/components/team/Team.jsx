@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
+import Cta from "../home/Cta";
+
 import "./style.css";
 
 const Team = () => {
@@ -47,7 +49,40 @@ const Team = () => {
             </div>
           </div>
         </div>
-
+        <div className='team__Wrap'>
+          <div className='our_tm-clm'>
+            <div className='our_tm-crd'>
+              <div className='our_tm-img'>
+                <img src="assets/images/Image1.png" alt="Ashrith Rao" />
+              </div>
+              <div className='our_tm-txt'>
+                <h4>Ashrith Rao</h4>
+                <h5>CEO, Managing Director</h5>
+              </div>
+            </div>
+            <div className='our_tm-crd'>
+              <div className='our_tm-img'>
+                <img src="assets/images/Image2.png" alt="Sai Datta Reddy" />
+              </div>
+              <div className='our_tm-txt'>
+                <h4>Sai Datta Reddy</h4>
+                <h5>Director, CMO</h5>
+              </div>
+            </div>
+            <div className='our_tm-crd'>
+              <div className='our_tm-img'>
+                <img src="assets/images/Image3.png" alt="M Sri Harsha Vamsi" />
+              </div>
+              <div className='our_tm-txt'>
+                <h4>M Sri Harsha Vamsi</h4>
+                <h5>Director of photography and design</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='team_Cta-wrap'>
+          <Cta></Cta>
+        </div>
       </div>
       <Footer></Footer>
     </>
