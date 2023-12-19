@@ -1,0 +1,138 @@
+.blog_post-sec {
+    padding: 0 10rem;
+}
+
+.blog_p-ttl h2 {
+    font-family: Inter;
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 97px;
+    letter-spacing: -3px;
+    text-align: left;
+    padding-right: 20%;
+    margin: 20px 0;
+}
+
+.blog_p-dt {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.blog_p-dt span {
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #9D9FA1;
+}
+
+.blog_p-img {
+    padding: 7rem 0;
+    border-radius: 32px;
+}
+
+.blog_p-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.bl_p-row {
+    display: flex;
+    gap: 7rem;
+}
+
+.blog_p-para p {
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #BDBDBD;
+    flex: 1;
+}
+
+.blog_p-cnt h3 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -2.6px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.blog_p-cnt p {
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+.blog_quote {
+    max-width: 1024px;
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 7rem 0;
+}
+
+.quote_icn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_para p {
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.quote_auth {
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.blog_ext-para p {
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+.blog_post-others .blog_card-wrap {
+    padding: 0;
+}
+
+.blog_other-ttl h3 {
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -2.6px;
+    text-align: left;
+    margin-bottom: 7rem;
+}
+
+.blog_post-others {
+    padding: 10rem 0;
+}

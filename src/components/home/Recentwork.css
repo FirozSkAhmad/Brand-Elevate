@@ -42,8 +42,9 @@
 }
 
 .rec_Img {
-    width: 832px;
-    height: 684px;
+    /* width: 832px;
+    height: 684px; */
+    width: 100%;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
@@ -92,4 +93,30 @@
 .arrow-up-right img {
     width: 100%;
     object-fit: cover;
+}
+
+.rec_Col {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1680px) {
+    .recent_Work-wrap {
+        padding: 6rem 6rem 0;
+    }
+
+    .rec_Ttl a {
+        font-size: 26px;
+        line-height: 38px;
+        padding: 32px;
+    }
+
+    .rec_Btn a {
+        padding: 13px 37px;
+        font-size: 20px;
+    }
+
+    .arrow-up-right {
+        width: 32px;
+        height: 32px;
+    }
 }

@@ -117,3 +117,37 @@
 
 
 /* ------------------------------- */
+
+
+@media only screen and (max-width: 1680px) {
+  .header__Wrap {
+    padding: 4rem 6rem;
+  }
+
+  .navbar {
+    border-radius: 25px;
+  }
+
+  .logo_Con {
+    padding: 3rem 5rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 60px;
+  }
+
+  .navbar a {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .ham_Con {
+    padding: 0rem 6rem;
+  }
+
+  .hamburger {
+    width: 66px;
+    height: 20px;
+  }
+}

@@ -66,3 +66,33 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 1680px) {
+    .cta__Wrap {
+        padding: 6rem 6rem 0;
+    }
+
+    .cta__content {
+        gap: 4rem;
+        padding: 8rem 24rem;
+    }
+
+    .cta__Ttl h2 {
+        font-size: 80px;
+    }
+
+    .cta__Ttl p {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .cta_Btn a {
+        font-size: 17px;
+        line-height: 30px;
+        padding: 14px 35px;
+    }
+
+    .cta__S {
+        border-radius: 32px;
+    }
+}

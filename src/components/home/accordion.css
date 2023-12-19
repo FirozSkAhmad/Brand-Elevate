@@ -171,3 +171,49 @@ body {
     text-align: left;
     color: #fff;
 }
+
+@media only screen and (max-width: 1680px) {
+    .acc__Wrapper {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .acc_img {
+        width: 160px;
+        height: 42px;
+    }
+
+    .accordion-item__title {
+        font-size: 35px;
+    }
+
+    .accordion-item__content {
+        padding: 0 80px 32px 192px;
+    }
+
+    .accordion-item__paragraph {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .acc_icn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .acc_icn::before {
+        width: 33px;
+    }
+
+    .acc_icn::after {
+        width: 32px;
+    }
+
+    .accordion-item__line {
+        padding-bottom: 32px;
+    }
+
+    .acc_Ttl-cnt {
+        gap: 32px;
+    }
+}

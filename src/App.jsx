@@ -10,6 +10,7 @@ import Terms from "./components/terms/Terms";
 import Team from "./components/team/Team";
 import ContactUs from "./components/contact/ContactUs";
 import PortfolioSingle from "./components/PortfolioSingle";
+import BlogPost from "../src/components/BlogPost";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="team" element={<Team />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="PortfolioSingle" element={<PortfolioSingle />} />
+        <Route path="blogpost" element={<BlogPost />} />
         <Route />
       </Routes>
     </BrowserRouter>

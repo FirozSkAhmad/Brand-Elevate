@@ -28,3 +28,18 @@
     text-align: left;
     color: #fff;
 }
+
+@media only screen and (max-width: 1680px) {
+    .service__Wrap {
+        padding: 0 6rem
+    }
+
+    .icon_Ttl {
+        width: 36px;
+        height: 36px;
+    }
+
+    .text_Ttl h3 {
+        font-size: 23px;
+    }
+}

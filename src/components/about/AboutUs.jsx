@@ -7,8 +7,25 @@ import OurTeam from "../home/OurTeam";
 import Cta from "../home/Cta";
 
 import Lenis from '@studio-freight/lenis';
+import gsap from 'gsap';
+
+import CountUp from 'react-countup';
 
 const AboutUs = () => {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.to(".about_line span", 1.8, {
+      y: 0,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      }
+    })
+  }, []);
+
   useEffect(() => {
     const initializeCursor = () => {
       const links = document.querySelectorAll('a');
@@ -51,13 +68,20 @@ const AboutUs = () => {
     }
 
     requestAnimationFrame(raf);
-  },[])
+  }, [])
   return (
     <>
       <Header></Header>
       <div className='about__Wrap'>
         <div className='about__Hero'>
-          <h2>Humble beginnings.<br></br>An inspiring story.</h2>
+          <div className='abt_hr-ttl'>
+            <div className='about_line'>
+              <span>Humble beginnings.</span>
+            </div>
+            <div className='about_line'>
+              <span>An inspiring story.</span>
+            </div>
+          </div>
           <div className='abt_hr-img'>
             <img src="assets/images/abt-img.png" alt="about" />
           </div>
@@ -79,7 +103,10 @@ const AboutUs = () => {
                 <div className='acc_cnt-col'>
                   <div className='acc_content'>
                     <div className='acc_counter'>
-                      <span>15k+</span>
+                      <span>
+                        <CountUp end={15} enableScrollSpy scrollSpyOnce />
+                        k+
+                      </span>
                     </div>
                     <div className='acc_head'>
                       <h4>Unique sections</h4>
@@ -92,10 +119,13 @@ const AboutUs = () => {
                 <div className='acc_cnt-col'>
                   <div className='acc_content'>
                     <div className='acc_counter'>
-                      <span>15k+</span>
+                      <span>
+                        <CountUp end={250} enableScrollSpy scrollSpyOnce />
+                        +
+                      </span>
                     </div>
                     <div className='acc_head'>
-                      <h4>Unique sections</h4>
+                      <h4>Components</h4>
                     </div>
                     <div className='acc_para'>
                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
@@ -107,10 +137,13 @@ const AboutUs = () => {
                 <div className='acc_cnt-col'>
                   <div className='acc_content'>
                     <div className='acc_counter'>
-                      <span>15k+</span>
+                      <span>
+                        <CountUp end={86} enableScrollSpy scrollSpyOnce />
+                        +
+                      </span>
                     </div>
                     <div className='acc_head'>
-                      <h4>Unique sections</h4>
+                      <h4>Clonable sections</h4>
                     </div>
                     <div className='acc_para'>
                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
@@ -120,10 +153,13 @@ const AboutUs = () => {
                 <div className='acc_cnt-col'>
                   <div className='acc_content'>
                     <div className='acc_counter'>
-                      <span>15k+</span>
+                      <span>
+                        <CountUp end={120} enableScrollSpy scrollSpyOnce />
+                        +
+                      </span>
                     </div>
                     <div className='acc_head'>
-                      <h4>Unique sections</h4>
+                      <h4>Clonable sections</h4>
                     </div>
                     <div className='acc_para'>
                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>

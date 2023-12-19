@@ -1,4 +1,4 @@
-.about__Hero h2 {
+/* .about__Hero h2 {
   font-family: Inter;
   font-size: 131px;
   font-weight: 600;
@@ -6,6 +6,36 @@
   letter-spacing: -6px;
   text-align: center;
   margin-bottom: 10rem;
+} */
+
+.abt_hr-ttl{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.about_line{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_line span{
+  position: absolute;
+  font-family: Inter;
+  font-size: 131px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -6px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  transform: skewY(7);
+  transform: translateY(100%);
 }
 
 .abt_hr-img img {

@@ -21,7 +21,7 @@
 
 .our_tm-img {
     width: 100%;
-    height: 376px;
+    /* height: 376px; */
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
 }
@@ -54,4 +54,46 @@
     letter-spacing: 0px;
     text-align: left;
     color: #9D9FA1;
+}
+
+@media only screen and (max-width: 1680px) {
+    .ourTeam_Wrap {
+        padding: 6rem;
+    }
+
+    .our_tm-wrap {
+        margin-top: 6rem;
+    }
+
+    .our_tm-clm {
+        gap: 12rem;
+    }
+
+    .our_tm-txt h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .our_tm-txt h5 {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .our_tm-crd {
+        border-radius: 25px;
+    }
+
+    .our_tm-txt {
+        padding: 16px 16px 24px;
+    }
+
+    .our_tm-img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .our_tm-img img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
 }

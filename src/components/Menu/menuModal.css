@@ -193,3 +193,56 @@ textarea {
     flex-direction: column;
     gap: 8rem;
 }
+
+@media only screen and (max-width: 1680px) {
+    .mn_Cnt-bx {
+        padding: 0 18rem 0 6rem;
+    }
+
+    .mn_Col1 {
+        gap: 8rem;
+    }
+
+    .mn_Ttl-icn {
+        gap: 6rem;
+    }
+
+    .menu_Modal-logo {
+        width: 260px;
+        height: 152px;
+    }
+
+    .mn_Icn-bx i {
+        font-size: 36px;
+    }
+
+    .mn_Icn-bx {
+        gap: 6rem;
+    }
+
+    .mn_Cnt-us a {
+        font-size: 35px;
+        gap: 20px;
+    }
+
+    .mn_Cnt-us i {
+        font-size: 36px;
+    }
+
+    .mn_Col2 ul {
+        gap: 6rem;
+    }
+
+    .mn_Col2 a {
+        font-size: 48px;
+    }
+
+    .mn_Cl-icn {
+        top: 6rem;
+        right: 6rem;
+    }
+
+    .mn_Cl-icn i {
+        font-size: 36px;
+    }
+}
