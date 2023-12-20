@@ -209,3 +209,26 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .title-hero .line {
+    height: 54px;
+  }
+
+  .line span {
+    font-size: 52px;
+  }
+
+  .title-hero {
+    margin-bottom: 26px;
+  }
+
+  .detail-sponsors {
+    gap: 20px;
+  }
+
+  .detail-text p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

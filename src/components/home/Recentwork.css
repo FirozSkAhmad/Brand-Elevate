@@ -133,7 +133,42 @@
     .rec_Col {
         width: 100%;
     }
-    .rec_Sec{
+
+    .rec_Sec {
         margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .rec_Sec {
+        margin-top: 24px;
+    }
+
+    .rec_Ttl a {
+        font-size: 20px;
+        line-height: 35px;
+        padding: 24px;
+    }
+
+    .rec_Row {
+        gap: 32px;
+    }
+
+    .rec_Rw-wrap {
+        gap: 32px;
+    }
+
+    .rec_Sec {
+        gap: 32px;
+    }
+
+    .rec_Btn a {
+        padding: 12px 28px;
+        font-size: 18px;
+    }
+
+    .arrow-up-right {
+        width: 24px;
+        height: 24px;
     }
 }

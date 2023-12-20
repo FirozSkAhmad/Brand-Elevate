@@ -289,3 +289,35 @@ textarea {
         right: 30px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .mob-menu_Modal-logo {
+        width: 70px;
+        height: 42px;
+    }
+
+    .mob-mn_Col2 ul {
+        gap: 5rem;
+    }
+
+    .mob-mn_Col2 {
+        gap: 7rem;
+    }
+
+    .mn_Icn-bx i {
+        font-size: 26px;
+    }
+
+    .mob-mn_Cl-icn i {
+        font-size: 31px;
+    }
+
+    .mob-mn_Cnt-bx {
+        padding: 25px 25px 40px 25px;
+    }
+
+    .mob-mn_Cl-icn {
+        top: 36px;
+        right: 40px;
+    }
+}

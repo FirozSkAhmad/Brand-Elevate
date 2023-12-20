@@ -108,3 +108,24 @@
         padding: 6rem 16px 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .cta__Wrap {
+        padding: 2rem 16px 0;
+    }
+
+    .cta__Ttl p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .cta__Ttl h2 {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .cta__content {
+        padding: 8rem 16px;
+        gap: 32px;
+    }
+}

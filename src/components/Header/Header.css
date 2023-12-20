@@ -208,3 +208,18 @@
     object-fit: cover;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .mob_Logo-con {
+    padding: 16px 30px
+  }
+
+  .mob_ham-con {
+    padding: 16px 30px;
+  }
+
+  .mob-logo {
+    width: 22px;
+    height: 17px;
+  }
+}

@@ -44,9 +44,24 @@
     }
 }
 
-@media only screen and (max-width: 991px){
-    .service__Wrap{
+@media only screen and (max-width: 991px) {
+    .service__Wrap {
         padding: 0 16px;
         padding-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sec__Ttl {
+        gap: 8px;
+    }
+
+    .icon_Ttl {
+        width: 32px;
+        height: 32px;
+    }
+
+    .text_Ttl h3 {
+        font-size: 20px;
     }
 }

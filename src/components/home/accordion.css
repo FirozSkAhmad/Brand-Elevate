@@ -244,13 +244,35 @@ body {
     .acc_icn::after {
         width: 22px;
     }
+
     .accordion-item__line {
         padding-bottom: 16px;
     }
-    .accordion-list{
+
+    .accordion-list {
         gap: 16px;
     }
-    .acc__Wrapper{
+
+    .acc__Wrapper {
         margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .acc__Wrapper {
+        margin-top: 5rem;
+    }
+
+    .acc_Ttl-cnt {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .accordion-item__content {
+        padding: 0 0px 16px 0px;
+    }
+    .acc__Wrapper {
+        margin-bottom: 1rem;
     }
 }

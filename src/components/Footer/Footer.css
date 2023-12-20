@@ -213,16 +213,18 @@
     }
 
     .ft_Top-s {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .ft_menu-item {
         padding: 16px 0;
-        border-bottom: 2px solid #282828;
+        border-right: 0;
+        /* border-bottom: 2px solid #282828; */
     }
 
     .ft_email {
         padding: 16px 0;
+        border-bottom: 2px solid #282828;
     }
 
     .ft_Btm-s {
@@ -231,10 +233,12 @@
 
     .ft_Blog {
         padding: 16px 0;
+        border-right: 0;
         border-bottom: 2px solid #282828;
     }
 
     .ft_Social-item {
+        border-right: 0;
         padding: 16px 0;
         border-bottom: 2px solid #282828;
     }
@@ -243,4 +247,29 @@
         padding: 16px 0;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__Wrap {
+        padding: 16px 16px 40px 16px;
+    }
+
+    .ft_logo {
+        width: 75px;
+        height: 46px;
+    }
+
+    .ft_menu-item {
+        gap: 16px;
+    }
+
+    .footer_Sec a {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ft_email a {
+        font-size: 20px;
+        line-height: 45px;
+    }
 }
