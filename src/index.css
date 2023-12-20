@@ -36,13 +36,25 @@ html {
     transition: all 0.15s ease, left 0.3s linear, top 0.3s linear;
 }
 
-.cursor-hover--a{
+.cursor-hover--a {
     height: 120px;
     width: 120px;
     mix-blend-mode: difference;
     background-color: #fff;
 }
 
-.cursor-hover--a [data-cursor="0"]{
+.cursor-hover--a [data-cursor="0"] {
     background-color: #000;
+}
+
+@media only screen and (max-width: 991px) {
+
+   
+
+    [data-cursor]{
+        display: none;
+    }
+    .cursor-hover--a{
+        display: none;
+    }
 }

@@ -97,3 +97,28 @@
         border-top-right-radius: 25px;
     }
 }
+
+@media only screen and (max-width: 1150px) {
+    .our_tm-clm {
+        gap: 4rem;
+    }
+
+    .our_tm-txt h5 {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .ourTeam_Wrap {
+        padding: 6rem 16px;
+    }
+
+    .our_tm-wrap {
+        margin-top: 4rem;
+    }
+
+    .our_tm-clm {
+        flex-direction: column;
+    }
+}

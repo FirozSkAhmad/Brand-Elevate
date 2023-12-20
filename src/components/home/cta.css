@@ -96,3 +96,15 @@
         border-radius: 32px;
     }
 }
+
+@media only screen and (max-width: 1150px) {
+    .cta__content {
+        padding: 8rem 10rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .cta__Wrap {
+        padding: 6rem 16px 0;
+    }
+}

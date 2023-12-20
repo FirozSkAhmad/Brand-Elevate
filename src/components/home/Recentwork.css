@@ -120,3 +120,20 @@
         height: 32px;
     }
 }
+
+@media only screen and (max-width: 991px) {
+    .recent_Work-wrap {
+        padding: 6rem 16px 0;
+    }
+
+    .rec_Row {
+        flex-direction: column;
+    }
+
+    .rec_Col {
+        width: 100%;
+    }
+    .rec_Sec{
+        margin-top: 4rem;
+    }
+}

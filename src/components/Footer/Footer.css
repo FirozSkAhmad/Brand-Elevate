@@ -171,4 +171,76 @@
         font-size: 15px;
         line-height: 28px;
     }
+
+    .ft_logo {
+        width: 130px;
+        height: 82px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .ft_menu-item {
+        gap: 20px;
+    }
+
+    .ft_email a {
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .footer_Logo-s {
+        padding: 4rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer__Wrap {
+        padding: 32px 16px 60px 16px;
+    }
+
+    .footer_Sec {
+        grid-template-areas:
+            "l l l l l l l l l l l l"
+            "t t t t t t t t t t t t"
+            "f f f f f f f f f f f f";
+        grid-template-rows: auto;
+    }
+
+    .footer_Logo-s {
+        border-right: none;
+        border-bottom: 2px solid #282828;
+        padding: 24px 5rem;
+    }
+
+    .ft_Top-s {
+        flex-direction: column;
+    }
+
+    .ft_menu-item {
+        padding: 16px 0;
+        border-bottom: 2px solid #282828;
+    }
+
+    .ft_email {
+        padding: 16px 0;
+    }
+
+    .ft_Btm-s {
+        flex-direction: column;
+    }
+
+    .ft_Blog {
+        padding: 16px 0;
+        border-bottom: 2px solid #282828;
+    }
+
+    .ft_Social-item {
+        padding: 16px 0;
+        border-bottom: 2px solid #282828;
+    }
+
+    .ft_Copyright {
+        padding: 16px 0;
+    }
+
 }

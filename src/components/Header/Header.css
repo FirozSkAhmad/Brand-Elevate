@@ -151,3 +151,60 @@
     height: 20px;
   }
 }
+
+@media only screen and (min-width: 991px) {
+  .mob_Navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    display: none;
+  }
+
+  .header__Wrap {
+    padding: 16px;
+  }
+
+  .mob_Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #282828;
+    border-radius: 16px;
+  }
+
+  .mob_Logo-con {
+    display: flex;
+    align-items: center;
+    padding: 39px;
+    border-right: 2px solid #282828;
+  }
+
+  .mob-logo {
+    width: 40px;
+    height: 30px;
+  }
+
+  .mob-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .mob_ham-con {
+    padding: 39px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mob_ham {
+    width: 97px;
+    height: 21px;
+  }
+
+  .mob_ham img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

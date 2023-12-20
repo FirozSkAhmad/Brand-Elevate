@@ -43,3 +43,10 @@
         font-size: 23px;
     }
 }
+
+@media only screen and (max-width: 991px){
+    .service__Wrap{
+        padding: 0 16px;
+        padding-top: 5rem;
+    }
+}
