@@ -365,3 +365,209 @@
     line-height: 34px;
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .acc_para p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .acc_Ttl p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .acc_Ttl h3 {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .acc_content-con {
+    gap: 32px;
+  }
+
+  .acc_counter span {
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  .acc_cnt-con {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .about_line {
+    height: 87px;
+  }
+
+  .about_line span {
+    font-size: 80px;
+  }
+
+  .acc_Ttl p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .acc_counter span {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .acc_cnt-con {
+    gap: 20px;
+  }
+
+  .acc_head h4 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .acc_cnt-row {
+    gap: 20px;
+  }
+
+  .acc_para p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .acc_Ttl h3 {
+    font-size: 30px;
+  }
+
+  .achievement__S {
+    gap: 32px;
+  }
+
+  .acc_content-con {
+    gap: 24px;
+  }
+
+  .slideContainer {
+    max-width: 50rem;
+  }
+
+  .quote p {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .auth_N {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .auth_D {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about__Hero {
+    padding: 16px 16px 4rem;
+  }
+
+  .about_line {
+    height: 70px;
+  }
+
+  .about_line span {
+    font-size: 64px;
+    letter-spacing: -2px;
+  }
+
+  .abt_hr-ttl {
+    margin-bottom: 32px;
+  }
+
+  .achievement__S {
+    padding: 4rem 16px;
+    flex-direction: column-reverse;
+  }
+
+  .acc_Ttl h3 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .acc_Ttl p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .acc_counter span {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .acc_head h4 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .acc_para p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .acc_Ttl {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9D9FA1;
+  }
+
+  .about__Slider-testimonial {
+    padding: 6rem 16px;
+    padding-bottom: 0;
+  }
+
+  .slideContainer {
+    max-width: 100%;
+  }
+
+  .about__Slider-testimonial .swiper-button-prev,
+  .about__Slider-testimonial .swiper-button-next {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about_line {
+    height: 40px;
+  }
+
+  .about_line span {
+    font-size: 35px;
+    letter-spacing: -2px;
+  }
+
+  .acc_cnt-row {
+    flex-direction: column;
+  }
+
+  .auth_N {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .auth_D {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .quote p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .sw_Cnt {
+    gap: 32px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+  }
+}

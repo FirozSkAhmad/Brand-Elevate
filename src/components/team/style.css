@@ -5,3 +5,29 @@
 .team__Wrap {
     padding: 5rem 10rem 10rem;
 }
+
+@media only screen and (max-width: 1680px) {
+    .team_Mn-wrap {
+        padding: 0 6rem;
+    }
+
+    .team__Wrap {
+        padding: 5rem 6rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .team_Mn-wrap {
+        padding: 16px 16px 0;
+    }
+
+    .team__Wrap {
+        padding: 4rem 16px 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .team__Wrap {
+        padding: 32px 16px 2rem;
+    }
+}

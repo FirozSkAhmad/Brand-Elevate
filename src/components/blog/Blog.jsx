@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 import Cta from "../home/Cta";
 import Lenis from '@studio-freight/lenis';
 import "./style.css";
-
+import CardsCon from './CardsCon';
 const Blog = () => {
   useEffect(() => {
     const initializeCursor = () => {
@@ -49,7 +49,7 @@ const Blog = () => {
     }
 
     requestAnimationFrame(raf);
-  },[])
+  }, [])
   return (
     <>
       <Header></Header>
@@ -65,7 +65,9 @@ const Blog = () => {
           </div>
         </div>
         <div className='blog_card-wrap'>
-          <div className='blog-row'>
+
+          <CardsCon></CardsCon>
+          {/* <div className='blog-row'>
             <div className='blog_col'>
               <div className='blog_con'>
                 <div className='blog_img'>
@@ -160,7 +162,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='blog_more-btn'>
           <button>Next page</button>

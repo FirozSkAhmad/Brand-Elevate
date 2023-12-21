@@ -66,7 +66,7 @@ const MenuModal = ({ isOpen, onClose }) => {
                                         </div>
                                     </div>
                                     <div className="mn_Cnt-us">
-                                        <a href="" onClick={onClose}>Contact BE <i className="fa-solid fa-arrow-right"></i></a>
+                                        <Link to="/contact">Contact BE <i className="fa-solid fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                                 <div className="mn_Col2">

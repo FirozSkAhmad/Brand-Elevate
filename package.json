@@ -12,6 +12,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.29",
     "custom-cursor": "^2.2.3",
+    "firebase": "^10.7.1",
     "gsap": "^3.12.3",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",

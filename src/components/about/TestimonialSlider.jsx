@@ -10,19 +10,19 @@ import "swiper/css/bundle";
 const TestimonialSlider = () => {
     useEffect(() => {
         const swiper = new Swiper(".swiper-slider", {
-            // slidesPerView: 1,
-            // speed: 500,
-            // grabCursor: true,
-            // freeMode: false,
-            // loop: true,
-            // mousewheel: false,
+            slidesPerView: 1,
+            speed: 500,
+            grabCursor: true,
+            freeMode: false,
+            loop: true,
+            mousewheel: false,
             keyboard: {
                 enabled: true,
             },
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: false,
