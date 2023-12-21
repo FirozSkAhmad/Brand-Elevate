@@ -6,7 +6,26 @@ import Footer from './Footer/Footer';
 
 import Cta from "../components/home/Cta";
 
+import Lenis from '@studio-freight/lenis';
+import { Link } from 'react-router-dom';
+
 const PortfolioSingle = () => {
+
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        lenis.on('scroll', (e) => {
+            // console.log(e);
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    }, [])
+
     useEffect(() => {
         const initializeCursor = () => {
             const links = document.querySelectorAll('a');
@@ -40,10 +59,10 @@ const PortfolioSingle = () => {
             <Header></Header>
             <div className='port_Single-wrap'>
                 <div className='port_Mn-back'>
-                    <button>
+                    <Link to="/portfolio">
                         <span className='back_logo'><img src='assets/images/back.png'></img></span>
                         All case studies
-                    </button>
+                    </Link>
                 </div>
                 <div className='port_sn-mn'>
                     <div className='sn_mn-ttl'>

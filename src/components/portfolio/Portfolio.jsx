@@ -7,6 +7,8 @@ import Cta from "../home/Cta";
 
 import Lenis from '@studio-freight/lenis';
 
+import { Link } from "react-router-dom";
+
 // import Cursor from 'custom-cursor';
 
 // new Cursor({
@@ -16,6 +18,20 @@ import Lenis from '@studio-freight/lenis';
 // })
 
 const Portfolio = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on('scroll', (e) => {
+      // console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, [])
   useEffect(() => {
     const initializeCursor = () => {
       const links = document.querySelectorAll('a');
@@ -44,20 +60,7 @@ const Portfolio = () => {
       });
     };
   }, []);
-  useEffect(() => {
-    const lenis = new Lenis();
 
-    lenis.on('scroll', (e) => {
-      // console.log(e);
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  },[])
   return (
     <>
       <Header></Header>
@@ -78,13 +81,13 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card-1.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <a href="">
+              <Link to="/PortfolioSingle">
                 <span className='port-work-n'>Varun Raj</span>
                 <span className='port_see'>
                   View case study
                   <span className='port-arr'><img src="assets/images/p-arrow.png" alt="" /></span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className='port-work-s'>
@@ -92,13 +95,13 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card-3.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <a href="">
+              <Link to="/PortfolioSingle">
                 <span className='port-work-n'>Swayamvar</span>
                 <span className='port_see'>
                   View case study
                   <span className='port-arr'><img src="assets/images/p-arrow.png" alt="" /></span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className='port-work-s'>
@@ -106,13 +109,13 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card-2.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <a href="">
+              <Link to="/PortfolioSingle">
                 <span className='port-work-n'>JY VS</span>
                 <span className='port_see'>
                   View case study
                   <span className='port-arr'><img src="assets/images/p-arrow.png" alt="" /></span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className='port-work-s'>
@@ -120,13 +123,13 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <a href="">
+              <Link to="/PortfolioSingle">
                 <span className='port-work-n'>Fuel Genie</span>
                 <span className='port_see'>
                   View case study
                   <span className='port-arr'><img src="assets/images/p-arrow.png" alt="" /></span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className='port_all-btn'>
