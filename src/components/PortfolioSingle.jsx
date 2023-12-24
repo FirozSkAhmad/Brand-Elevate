@@ -12,6 +12,45 @@ import { Link } from 'react-router-dom';
 const PortfolioSingle = () => {
 
     useEffect(() => {
+        // console.log("cursor removed")
+        const cursor = document.querySelector('[data-cursor="1"]');
+        cursor.classList.remove('cursor-hover--a');
+        // cursor.classList.add('cursor-hover--a');
+    }, [])
+
+
+    // useEffect(() => {
+
+    //     console.log("changes")
+    //     const initializeCursor = () => {
+    //         const links = document.querySelectorAll('a');
+    //         const cursor = document.querySelector('[data-cursor="1"]');
+
+    //         links.forEach(link => {
+    //             link.addEventListener('mouseenter', () => {
+    //                 cursor.classList.add('cursor-hover--a');
+    //             });
+
+    //             link.addEventListener('mouseleave', () => {
+    //                 cursor.classList.remove('cursor-hover--a');
+    //             });
+    //         });
+    //     };
+
+    //     initializeCursor();
+
+    //     // Clean up event listeners when the component unmounts
+    //     return () => {
+    //         const links = document.querySelectorAll('a');
+
+    //         links.forEach(link => {
+    //             link.removeEventListener('mouseenter', () => { });
+    //             link.removeEventListener('mouseleave', () => { });
+    //         });
+    //     };
+    // }, []);
+
+    useEffect(() => {
         const lenis = new Lenis();
 
         lenis.on('scroll', (e) => {
@@ -26,34 +65,7 @@ const PortfolioSingle = () => {
         requestAnimationFrame(raf);
     }, [])
 
-    useEffect(() => {
-        const initializeCursor = () => {
-            const links = document.querySelectorAll('a');
-            const cursor = document.querySelector('[data-cursor="1"]');
 
-            links.forEach(link => {
-                link.addEventListener('mouseenter', () => {
-                    cursor.classList.add('cursor-hover--a');
-                });
-
-                link.addEventListener('mouseleave', () => {
-                    cursor.classList.remove('cursor-hover--a');
-                });
-            });
-        };
-
-        initializeCursor();
-
-        // Clean up event listeners when the component unmounts
-        return () => {
-            const links = document.querySelectorAll('a');
-
-            links.forEach(link => {
-                link.removeEventListener('mouseenter', () => { });
-                link.removeEventListener('mouseleave', () => { });
-            });
-        };
-    }, []);
     return (
         <>
             <Header></Header>

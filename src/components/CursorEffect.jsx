@@ -1,30 +1,30 @@
 import React, { useEffect } from 'react';
-import { useCursor } from '../context/CursorContext';
+// import { useCursor } from '../context/CursorContext';
 // import './CursorEffect.css';
 
 import Cursor from 'custom-cursor';
 
 new Cursor({
-    count: 1,
+    count: 2,
     targets: ['a'],
-
 })
 
 const CursorEffect = () => {
-    const { isCursorHovered, setCursorHovered } = useCursor();
+    // const { isCursorHovered, setCursorHovered } = useCursor();
 
     useEffect(() => {
+
         const initializeCursor = () => {
             const links = document.querySelectorAll('a');
             const cursor = document.querySelector('[data-cursor="1"]');
-
+            // cursor.classList.remove('cursor-hover--a');
             links.forEach(link => {
                 link.addEventListener('mouseenter', () => {
-                    setCursorHovered(true);
+                    cursor.classList.add('cursor-hover--a');
                 });
 
                 link.addEventListener('mouseleave', () => {
-                    setCursorHovered(false);
+                    cursor.classList.remove('cursor-hover--a');
                 });
             });
         };
@@ -40,18 +40,10 @@ const CursorEffect = () => {
                 link.removeEventListener('mouseleave', () => { });
             });
         };
-    }, [setCursorHovered]);
+    }, []);
 
     return (
-
         <>
-
-            {isCursorHovered && (
-                // <div className="cursor-hover--a" data-cursor="1">
-                    
-                // </div>
-                <></>
-            )}
         </>
     );
 };

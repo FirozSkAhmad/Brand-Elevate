@@ -18,6 +18,44 @@ import { Link } from "react-router-dom";
 // })
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    // console.log("cursor removed")
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+    // cursor.classList.add('cursor-hover--a');
+  }, [])
+
+
+  // useEffect(() => {
+  //   const initializeCursor = () => {
+  //     const links = document.querySelectorAll('a');
+  //     const cursor = document.querySelector('[data-cursor="1"]');
+
+  //     links.forEach(link => {
+  //       link.addEventListener('mouseenter', () => {
+  //         cursor.classList.add('cursor-hover--a');
+  //       });
+
+  //       link.addEventListener('mouseleave', () => {
+  //         cursor.classList.remove('cursor-hover--a');
+  //       });
+  //     });
+  //   };
+
+  //   initializeCursor();
+
+  //   // Clean up event listeners when the component unmounts
+  //   return () => {
+  //     const links = document.querySelectorAll('a');
+
+  //     links.forEach(link => {
+  //       link.removeEventListener('mouseenter', () => { });
+  //       link.removeEventListener('mouseleave', () => { });
+  //     });
+  //   };
+  // }, []);
+
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -32,34 +70,7 @@ const Portfolio = () => {
 
     requestAnimationFrame(raf);
   }, [])
-  useEffect(() => {
-    const initializeCursor = () => {
-      const links = document.querySelectorAll('a');
-      const cursor = document.querySelector('[data-cursor="1"]');
 
-      links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-          cursor.classList.add('cursor-hover--a');
-        });
-
-        link.addEventListener('mouseleave', () => {
-          cursor.classList.remove('cursor-hover--a');
-        });
-      });
-    };
-
-    initializeCursor();
-
-    // Clean up event listeners when the component unmounts
-    return () => {
-      const links = document.querySelectorAll('a');
-
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', () => { });
-        link.removeEventListener('mouseleave', () => { });
-      });
-    };
-  }, []);
 
   return (
     <>
@@ -81,7 +92,7 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card-1.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <Link to="/PortfolioSingle">
+              <Link to="/PortfolioSingle" preventScrollReset={false}>
                 <span className='port-work-n'>Varun Raj</span>
                 <span className='port_see'>
                   View case study
@@ -95,7 +106,7 @@ const Portfolio = () => {
               <img src="assets/images/Portfolio_Card-3.png" alt="" />
             </div>
             <div className='port-work-cta'>
-              <Link to="/PortfolioSingle">
+              <Link to="/PortfolioSingle" preventScrollReset={true}>
                 <span className='port-work-n'>Swayamvar</span>
                 <span className='port_see'>
                   View case study

@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { Link } from 'react-router-dom';
+
 const ContactForm = () => {
+
+    // const handleCursor = () => {
+    //     const cursor = document.querySelector('[data-cursor="1"]');
+    //     cursor.classList.remove('cursor-hover--a');
+    // }
     // State to manage form fields
     const [formData, setFormData] = useState({
         firstName: '',
@@ -122,7 +129,7 @@ const ContactForm = () => {
                     </div>
                     <div className='f_Btn'>
                         <button type="submit">Send message</button>
-                        <span>By contacting us, you agree to Clonify’s <span className='b'>Terms and Conditions.</span></span>
+                        <span>By contacting us, you agree to Brand Elevate <Link to="/terms" className='b'>Terms and Conditions.</Link></span>
                     </div>
                 </form>
             </div>

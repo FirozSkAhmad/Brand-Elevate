@@ -7,34 +7,43 @@ import Lenis from '@studio-freight/lenis';
 import "./style.css";
 
 const ContactUs = () => {
+
   useEffect(() => {
-    const initializeCursor = () => {
-      const links = document.querySelectorAll('a');
-      const cursor = document.querySelector('[data-cursor="1"]');
+    // console.log("cursor removed")
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+    // cursor.classList.add('cursor-hover--a');
+  }, [])
 
-      links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-          cursor.classList.add('cursor-hover--a');
-        });
 
-        link.addEventListener('mouseleave', () => {
-          cursor.classList.remove('cursor-hover--a');
-        });
-      });
-    };
+  // useEffect(() => {
+  //   const initializeCursor = () => {
+  //     const links = document.querySelectorAll('a');
+  //     const cursor = document.querySelector('[data-cursor="1"]');
 
-    initializeCursor();
+  //     links.forEach(link => {
+  //       link.addEventListener('mouseenter', () => {
+  //         cursor.classList.add('cursor-hover--a');
+  //       });
 
-    // Clean up event listeners when the component unmounts
-    return () => {
-      const links = document.querySelectorAll('a');
+  //       link.addEventListener('mouseleave', () => {
+  //         cursor.classList.remove('cursor-hover--a');
+  //       });
+  //     });
+  //   };
 
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', () => { });
-        link.removeEventListener('mouseleave', () => { });
-      });
-    };
-  }, []);
+  //   initializeCursor();
+
+  //   // Clean up event listeners when the component unmounts
+  //   return () => {
+  //     const links = document.querySelectorAll('a');
+
+  //     links.forEach(link => {
+  //       link.removeEventListener('mouseenter', () => { });
+  //       link.removeEventListener('mouseleave', () => { });
+  //     });
+  //   };
+  // }, []);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -49,7 +58,7 @@ const ContactUs = () => {
     }
 
     requestAnimationFrame(raf);
-  },[])
+  }, [])
   return (
     <>
       <Header></Header>

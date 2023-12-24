@@ -62,15 +62,15 @@ const Header = () => {
               <Link to="/portfolio">
                 Projects
               </Link>
-              <Link to="/about" href="">
+              <Link to="/about">
                 About
               </Link>
-              <Link to="/team" href="">
+              <Link to="/team">
                 Team
               </Link>
-              <Link to="/contact" href="">
+              <a href="#contact">
                 Contact
-              </Link>
+              </a>
             </div>
           </div>
           <div className="ham_Con">
@@ -83,7 +83,7 @@ const Header = () => {
               <Link to="/blog"><span><img src="assets/images/pen.png"></img></span>Blog</Link>
             </div>
             <div className="gt_menu-item">
-              <a href="#"><span><img src="assets/images/calendar.png"></img></span>Get In Touch</a>
+              <Link to="/contact"><span><img src="assets/images/calendar.png"></img></span>Get In Touch</Link>
             </div>
           </div>
         </div>
