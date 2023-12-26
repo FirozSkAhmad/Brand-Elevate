@@ -8,6 +8,14 @@ import Lenis from '@studio-freight/lenis';
 import "./style.css";
 
 const Team = () => {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+  }, [])
+
   // useEffect(() => {
   //   const initializeCursor = () => {
   //     const links = document.querySelectorAll('a');
@@ -50,7 +58,7 @@ const Team = () => {
     }
 
     requestAnimationFrame(raf);
-  },[])
+  }, [])
   return (
     <>
       <Header></Header>

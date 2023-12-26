@@ -12,6 +12,8 @@ import ContactUs from "./components/contact/ContactUs";
 import PortfolioSingle from "./components/PortfolioSingle";
 import BlogPost from "../src/components/BlogPost";
 
+// import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
 

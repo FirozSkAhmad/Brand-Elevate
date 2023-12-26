@@ -37,6 +37,12 @@ const Blog = () => {
   // }, []);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+  }, [])
+
+  useEffect(() => {
     const lenis = new Lenis();
 
     lenis.on('scroll', (e) => {

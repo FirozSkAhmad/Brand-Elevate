@@ -43,6 +43,13 @@ const Home = () => {
   //     });
   //   };
   // }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+  }, [])
+
   return (
     <>
       {/* <CursorEffect></CursorEffect> */}

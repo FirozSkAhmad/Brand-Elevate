@@ -20,6 +20,9 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
 
   useEffect(() => {
+
+    window.scrollTo(0, 0);
+
     // console.log("cursor removed")
     const cursor = document.querySelector('[data-cursor="1"]');
     cursor.classList.remove('cursor-hover--a');

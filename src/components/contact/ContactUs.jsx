@@ -9,6 +9,9 @@ import "./style.css";
 const ContactUs = () => {
 
   useEffect(() => {
+
+    window.scrollTo(0, 0);
+
     // console.log("cursor removed")
     const cursor = document.querySelector('[data-cursor="1"]');
     cursor.classList.remove('cursor-hover--a');

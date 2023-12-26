@@ -13,6 +13,7 @@ import CountUp from 'react-countup';
 
 const AboutUs = () => {
   useEffect(() => {
+
     const tl = gsap.timeline();
 
     tl.to(".about_line span", 1.8, {
@@ -25,6 +26,12 @@ const AboutUs = () => {
       }
     })
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const cursor = document.querySelector('[data-cursor="1"]');
+    cursor.classList.remove('cursor-hover--a');
+  }, [])
 
   // useEffect(() => {
   //   const initializeCursor = () => {
