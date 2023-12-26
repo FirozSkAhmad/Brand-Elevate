@@ -16,7 +16,7 @@ const OurTeam = () => {
                         </div>
                         <div className='our_tm-txt'>
                             <h4>Ashrith Rao</h4>
-                            <h5>CEO, Managing Director</h5>
+                            <h5>Founder, CEO</h5>
                         </div>
                     </div>
                     <div className='our_tm-crd'>
@@ -25,7 +25,7 @@ const OurTeam = () => {
                         </div>
                         <div className='our_tm-txt'>
                             <h4>Sai Datta Reddy</h4>
-                            <h5>Director, CMO</h5>
+                            <h5>Founder, CMO</h5>
                         </div>
                     </div>
                     <div className='our_tm-crd'>
