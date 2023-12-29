@@ -10,7 +10,7 @@ const ContactForm = () => {
     firstName: "",
     lastName: "",
     email: "",
-    department: "",
+    phoneNumber: "",
     message: "",
   });
   const [errors, setErrors] = useState({});
@@ -23,12 +23,14 @@ const ContactForm = () => {
     if (formData.lastName.trim() === "") {
       newErrors.lastName = "Last name is required";
     }
-    if (formData.department.trim() === "") {
-      newErrors.department = "Department is required";
-    }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
+    }
+    //  phone number validation
+    const phoneNumberRegex = /^\d{10}$/; // Example: 10-digit phone number
+    if (!phoneNumberRegex.test(formData.phoneNumber)) {
+      newErrors.phoneNumber = "Please enter a valid phone number";
     }
 
     setErrors(newErrors);
@@ -55,7 +57,7 @@ const ContactForm = () => {
       const data = {
         name: formData.firstName + " " + formData.lastName,
         email: formData.email,
-        department: formData.department,
+        phoneNumber: formData.phoneNumber,
         message: formData.message,
       };
 
@@ -65,12 +67,11 @@ const ContactForm = () => {
           data
         )
         .then((response) => {
-          //   console.log(response);
           setFormData({
             firstName: "",
             lastName: "",
             email: "",
-            department: "",
+            phoneNumber: "",
             message: "",
           });
           toast.success(
@@ -176,22 +177,16 @@ const ContactForm = () => {
             <div className="f_Row">
               <div className="f_Col">
                 <div className="f_input">
-                  <select
-                    name="department"
-                    value={formData.department}
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
                     onChange={handleChange}
                     className="input_Fld"
-                  >
-                    <option value="">Department</option>
-                    <option value="Human Resources">Human Resources</option>
-                    <option value="Information Technology">
-                      Information Technology
-                    </option>
-                    <option value="finance">Finance</option>
-                    {/* Add more options as needed */}
-                  </select>
-                  {errors.department && (
-                    <span className="error-message">{errors.department}</span>
+                    placeholder="Phone number"
+                  />
+                  {errors.phoneNumber && (
+                    <span className="error-message">{errors.phoneNumber}</span>
                   )}
                 </div>
               </div>
