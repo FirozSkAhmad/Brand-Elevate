@@ -1,280 +1,374 @@
 .portfolio__Wrap {
-    position: relative;
+  position: relative;
 }
 
 .port_Mn-wrap {
-    padding: 0 10rem;
+  padding: 0 10rem;
 }
 
 .port_Mn-sec {
-    display: flex;
-    align-items: center;
-    border: 2px solid #282828;
-    border-radius: 32px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #282828;
+  border-radius: 32px;
 }
 
 .port_mn-ttl {
-    padding: 5rem 10rem;
-    width: 35%;
-    border-right: 2px solid #282828;
+  padding: 5rem 10rem;
+  width: 35%;
+  border-right: 2px solid #282828;
 }
 
 .port_mn-para {
-    width: 65%;
+  width: 65%;
 }
 
 .port_mn-ttl h2 {
-    font-family: Inter;
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 61px;
-    letter-spacing: -2px;
-    text-align: left;
+  font-family: Inter;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61px;
+  letter-spacing: -2px;
+  text-align: left;
 }
 
 .port_mn-para p {
-    font-family: Inter;
-    font-size: 37px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: -0.8px;
-    text-align: left;
-    padding-left: 7rem;
-    padding-right: 27%;
+  font-family: Inter;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: -0.8px;
+  text-align: left;
+  padding-left: 7rem;
+  padding-right: 27%;
 }
 
 .port_Work-wrap {
-    position: relative;
-    padding: 0 10rem;
-    margin-top: 64px;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+  position: relative;
+  padding: 0 10rem;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .port-work-s {
-    position: relative;
+  position: relative;
 }
 
 .port-wrk-img {
-    position: relative;
+  position: relative;
+  height: 80vh;
+  animation: shimmer 3s infinite linear;
+  background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 .port-wrk-img img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .port-work-cta {
-    position: absolute;
-    right: 32px;
-    bottom: 32px;
-    background: #000;
-    border-radius: 32px;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  background: #000;
+  border-radius: 32px;
 }
 
-.port-work-cta a {
-    text-decoration: none;
-    width: 534px;
-    height: 168px;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
+.port-work-cta .link_con {
+  text-decoration: none;
+  width: 534px;
+  height: 168px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .port-work-n {
-    font-family: Inter;
-    font-size: 29px;
-    font-weight: 600;
-    line-height: 51px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #fff;
+  font-family: Inter;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 51px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  overflow: hidden;
 }
 
 .port_see {
-    font-family: Inter;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #fff;
-    display: flex;
-    align-items: center;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .port-arr {
-    display: inline-block;
-    width: 37px;
-    height: 37px;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
 }
 
 .port-arr img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+}
+
+.rec_Btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #282828;
+  border-radius: 52px;
+  padding: 18px 37px;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.multi_btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: transparent;
+  border-radius: 52px;
+  border: 2px solid #282828;
+  padding: 18px 37px;
+  position: relative; /* Added for positioning the pseudo-element */
+}
+
+.multi_btn button {
+  color: #bdbdbd;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  background: transparent;
+}
+
+/* Adding a vertical line between buttons */
+.multi_btn .bck_btn::after {
+  content: "";
+  position: absolute;
+  right: 50%; /* Position the line in the middle */
+  top: 50%;
+  transform: translateY(-50%); /* Center the line vertically */
+  height: 70%; /* Adjust the height as per your design */
+  width: 2px; /* Width of the line */
+  background-color: #282828; /* Same as the border color of multi_btn */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-effect {
+  animation: shimmer 3s infinite linear;
+  background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
+  background-size: 1000px 100%;
+  border-radius: 40px;
+}
+
+.shimmer-effect .port-work-n,
+.shimmer-effect .port_see {
+  height: 30px; /* Represents the height of text */
+  animation: shimmer 3s infinite linear;
+  background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
+  margin: 8px 0; /* Spacing between lines */
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 1680px) {
-    .port_Mn-wrap {
-      padding: 0 6rem;
-    }
-  
-    .port_Work-wrap {
-      padding: 0 6rem;
-    }
-  
-    .port_mn-ttl {
-      padding: 3rem 5rem;
-    }
-  
-    .port_Mn-sec {
-      border-radius: 25px;
-    }
-  
-    .port_mn-ttl h2 {
-      font-size: 32px;
-      line-height: 50px;
-      text-align: center;
-    }
-  
-    .port_mn-para p {
-      font-size: 26px;
-      line-height: 38px;
-    }
-  
-    .port-work-cta {
-      border-radius: 25px;
-    }
-  
-    .port-work-cta a {
-      width: 460px;
-      height: 140px;
-      padding: 26px;
-    }
-  
-    .port-work-n {
-      font-size: 22px;
-      line-height: 42px;
-    }
-  
-    .port_see {
-      font-size: 20px;
-      line-height: 40px;
-    }
-  
-    .port-arr {
-      width: 32px;
-      height: 32px;
-    }
+  .port_Mn-wrap {
+    padding: 0 6rem;
   }
-  
-  @media only screen and (max-width: 1200px) {
-    .port_mn-para p {
-      font-size: 23px;
-      line-height: 36px;
-    }
-  
-    .port_mn-para p {
-      padding-left: 6rem;
-      padding-right: 20%;
-    }
+
+  .port_Work-wrap {
+    padding: 0 6rem;
   }
-  
-  @media only screen and (max-width: 991px) {
-    .port_Mn-wrap {
-      padding: 0 16px;
-    }
-  
-    .port_Work-wrap {
-      padding: 0 16px;
-    }
-  
-    .port_Mn-sec {
-      flex-direction: column;
-    }
-  
-    .port_mn-ttl h2 {
-      text-align: left;
-    }
-  
-    .port_mn-ttl {
-      width: 100%;
-      border-right: 0;
-      border-bottom: 2px solid #282828;
-      padding: 16px;
-    }
-  
-    .port_mn-para {
-      width: 100%;
-      padding: 16px;
-    }
-  
-    .port_mn-para p {
-      padding-left: 0;
-    }
-  
-    .port_Work-wrap {
-      margin-top: 32px;
-      gap: 32px;
-    }
-  
-    .port-work-cta a {
-      width: 310px;
-      height: 130px;
-      padding: 24px
-    }
+
+  .port_mn-ttl {
+    padding: 3rem 5rem;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .port_mn-ttl h2 {
-      font-size: 22px;
-      line-height: 38px;
-    }
-  
-    .port_mn-para p {
-      font-size: 14px;
-      line-height: 22px;
-    }
-  
-    .port-wrk-img {
-      position: relative;
-      height: 400px;
-      border-radius: 24px;
-    }
-  
-    .port-wrk-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 24px;
-    }
-  
-    .port-work-cta a {
-      width: 310px;
-      height: 104px;
-      padding: 24px;
-    }
-  
-    .port-work-n {
-      font-size: 20px;
-      line-height: 32px;
-    }
-  
-    .port_see {
-      font-size: 20px;
-      line-height: 34px;
-    }
-  
-    .port-arr {
-      width: 28px;
-      height: 28px;
-    }
-  
-    .port-work-cta {
-      right: unset;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 16px;
-    }
+
+  .port_Mn-sec {
+    border-radius: 25px;
   }
+
+  .port_mn-ttl h2 {
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .port_mn-para p {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .port-work-cta {
+    border-radius: 25px;
+  }
+
+  .port-work-cta .link_con {
+    width: 460px;
+    height: 140px;
+    padding: 26px;
+  }
+
+  .port-work-n {
+    font-size: 22px;
+    line-height: 42px;
+  }
+
+  .port_see {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .port-arr {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .port_mn-para p {
+    font-size: 23px;
+    line-height: 36px;
+  }
+
+  .port_mn-para p {
+    padding-left: 6rem;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .port_Mn-wrap {
+    padding: 0 16px;
+  }
+
+  .port_Work-wrap {
+    padding: 0 16px;
+  }
+
+  .port_Mn-sec {
+    flex-direction: column;
+  }
+
+  .port_mn-ttl h2 {
+    text-align: left;
+  }
+
+  .port_mn-ttl {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 2px solid #282828;
+    padding: 16px;
+  }
+
+  .port_mn-para {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .port_mn-para p {
+    padding-left: 0;
+  }
+
+  .port_Work-wrap {
+    margin-top: 32px;
+    gap: 32px;
+  }
+
+  .port-work-cta .link_con {
+    width: 310px;
+    height: 130px;
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .port_mn-ttl h2 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .port_mn-para p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .port-wrk-img {
+    position: relative;
+    height: 400px;
+    border-radius: 24px;
+  }
+
+  .port-wrk-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  .port-work-cta .link_con {
+    width: 310px;
+    /* height: 104px; */
+    padding: 24px;
+  }
+
+  .port-work-n {
+    font-size: 20px;
+    line-height: 42px;
+  }
+
+  .port_see {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .port-arr {
+    width: 28px;
+    height: 28px;
+  }
+
+  .port-work-cta {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+  }
+  .rec_Btn,
+  .multi_btn button {
+    font-size: 20px;
+  }
+}

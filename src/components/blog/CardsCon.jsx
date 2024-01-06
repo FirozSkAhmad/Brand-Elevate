@@ -1,102 +1,79 @@
-import { useEffect, useState } from "react";
-// import { NavLink } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import sharedContext from "../../context/SharedContext";
 
 const CardsCon = () => {
-    // const { setLoader } = useContext(sharedContext);
+  const { blogsData, setBlogsData } = useContext(sharedContext);
 
-    const [blogData, setBlogData] = useState([]);
+  const fetchData = async () => {
+    try {
+      const collectionRef = collection(db, "In The Blog"); // Replace 'your_collection_name' with the actual name of your collection
 
-    const fetchData = async () => {
-        try {
-            // setLoader(true);
+      const snapshot = await getDocs(collectionRef);
 
+      const data = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
 
-            const collectionRef = collection(db, "In The Blog"); // Replace 'your_collection_name' with the actual name of your collection
-            // console.log("collectionref",collectionRef)
+      setBlogsData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error.message);
+    }
+  };
 
-            const snapshot = await getDocs(collectionRef);
+  // Call the function to fetch data
+  useEffect(() => {
+    fetchData();
+  }, []);
 
+  let completeData = blogsData;
 
-            console.log("snapshot", snapshot)
+  const navigate = useNavigate();
 
+  const handleClick = (clickedCardData) => {
+    // Filter out the clicked card
+    const remainingCards = blogsData.filter(
+      (card) => card.id !== clickedCardData.id
+    );
 
-            const data = snapshot.docs.map((doc) => ({
-                id: doc.id,
-                ...doc.data(),
-            }));
+    // Shuffle the remaining cards and pick the first four
+    const shuffled = remainingCards.sort(() => 0.5 - Math.random());
+    const additionalCardsData = shuffled.slice(0, 4);
 
-
-            console.log("data", data)
-
-
-            setBlogData(data);
-
-            // setLoader(false);
-        } catch (error) {
-            console.error("Error fetching data:", error.message);
-            // setLoader(false);
-        }
+    // Combine clicked card with the additional four cards
+    const dataToSend = {
+      clickedCardData: clickedCardData,
+      additionalCardsData: additionalCardsData,
     };
 
-    // Call the function to fetch data
-    useEffect(() => {
-        fetchData();
-    }, []);
+    navigate("/BlogPost", { state: { data: dataToSend } });
+  };
 
-    let completeData = blogData;
-
-    // const removeCard = async (rowId) => {
-    //     try {
-    //         const documentRef = doc(db, InTheBlog, rowId);
-    //         await deleteDoc(documentRef);
-    //         console.log(`Row with ID ${rowId} removed successfully from Firestore`);
-    //         toast.success("removed card Successfully");
-    //         fetchData();
-    //     } catch (error) {
-    //         console.error("Error removing document:", error.message);
-    //     }
-    // };
-
-    return (
-
-        <>
-            {/* <div className='blog_con'>
-                <div className='blog_img'>
-                    <img src="assets/images/blog1.png" alt="blog1" />
-                </div>
-                <div className='blog_content'>
-                    <span className='bl-dt'>October 12, 2024</span>
-                    <span className='bl-ttl'>How to create SVG-ready icon symbols in Sketch</span>
-                </div>
-            </div> */}
-
-
-
-            <div className="blog-row">
-                {completeData?.map((data) => (
-                    <div className="blog_col">
-                        <div className="blog_con" key={data.id}>
-                            <div className="blog_img">
-                                <img
-                                    src={data?.img}
-                                    alt="Preview"
-                                />
-                            </div>
-                            <div className="blog_content">
-                                <span className='bl-dt'>October 12, 2024</span>
-                                <span className='bl-ttl'>{data?.heading}</span>
-                                {/* <p>{data?.bodyText}</p> */}
-                            </div>
-                        </div>
-                    </div>
-
-                ))}
+  return (
+    <>
+      <div className="blog-row">
+        {completeData?.map((data) => (
+          <div
+            key={data.id}
+            className="blog_col"
+            onClick={() => handleClick(data)}
+          >
+            <div className="blog_con">
+              <div className="blog_img">
+                <img src={data?.img} alt="Preview" />
+              </div>
+              <div className="blog_content">
+                <span className="bl-ttl">{data?.heading}</span>
+              </div>
             </div>
-
-        </>
-    );
+          </div>
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default CardsCon;

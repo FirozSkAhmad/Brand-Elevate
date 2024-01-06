@@ -1,159 +1,219 @@
 .blog_Mn-wrap {
-    padding: 0 10rem;
+  padding: 0 10rem;
 }
 
 .blog_card-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-    padding: 6rem 10rem 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 6rem 10rem 5rem 10rem;
 }
 
 .blog-row {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 42px;
-    row-gap: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+  row-gap: 70px;
 }
-
-/* .blog_col {
-    flex: 1;
-} */
 
 .blog_con {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: black;
+  cursor: pointer;
 }
 
+.blog_img {
+  width: 100%;
+  height: 82vh;
+  overflow: hidden;
+  animation: shimmer 3s infinite linear;
+  background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
+  border-radius: 48px;
+}
 .blog_img img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .blog_content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.shimmer-effect .blog_content {
+  height: 30px; /* Represents the height of text */
+  width: 80%;
+  animation: shimmer 3s infinite linear;
+  background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
+  border-radius: 48px;
 }
 
 span.bl-dt {
-    font-family: Inter;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 35px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #9D9FA1;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #9d9fa1;
 }
 
 .bl-ttl {
-    font-family: Inter;
-    font-size: 37px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: -0.8px;
-    text-align: left;
-    padding-right: 13%;
+  font-family: Inter;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: -0.8px;
+  text-align: left;
+  padding-right: 13%;
 }
 
-.blog_more-btn {
-    padding: 6rem 10rem 10rem;
+.rec_Btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #282828;
+  border-radius: 52px;
+  padding: 18px 37px;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
-.blog_more-btn button {
-    font-family: Inter;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #BDBDBD;
-    background: transparent;
-    border: 2px solid #282828;
-    border-radius: 52px;
-    padding: 18px 37px;
-    width: 100%;
-    cursor: pointer;
+.dule_btn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: transparent;
+  border-radius: 52px;
+  border: 2px solid #282828;
+  position: relative; /* Added for positioning the pseudo-element */
+}
+
+.dule_btn button {
+  color: #bdbdbd;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  background: transparent;
+}
+
+/* Adding a vertical line between buttons */
+.dule_btn .bck_btn::after {
+  content: "";
+  position: absolute;
+  right: 50%; /* Position the line in the middle */
+  top: 50%;
+  transform: translateY(-50%); /* Center the line vertically */
+  height: 70%; /* Adjust the height as per your design */
+  width: 2px; /* Width of the line */
+  background-color: #282828; /* Same as the border color of multi_btn */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
 }
 
 @media only screen and (max-width: 1680px) {
-    .blog_Mn-wrap {
-        padding: 0 6rem;
-    }
+  .blog_Mn-wrap {
+    padding: 0 6rem;
+  }
 
-    .blog_card-wrap {
-        padding: 6rem 6rem 5rem 6rem;
-    }
+  .blog_card-wrap {
+    padding: 6rem 6rem 5rem 6rem;
+  }
 
-    .bl-ttl {
-        font-size: 28px;
-        line-height: 40px;
-    }
+  .bl-ttl {
+    font-size: 28px;
+    line-height: 40px;
+  }
 
-    span.bl-dt {
-        font-size: 17px;
-        line-height: 30px;
-    }
+  span.bl-dt {
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-    .blog_more-btn button {
-        font-size: 22px;
-        line-height: 38px;
-        padding: 14px 30px;
-    }
+  .blog_more-btn button {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 14px 30px;
+  }
 
-    .blog_more-btn {
-        padding: 6rem 6rem 6rem;
-    }
+  .blog_more-btn {
+    padding: 6rem 6rem 6rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .blog_Mn-wrap {
-        padding: 16px 16px 0;
-    }
+  .blog_Mn-wrap {
+    padding: 16px 16px 0;
+  }
 
-    .blog_card-wrap {
-        padding: 4rem 16px 4rem 16px;
-    }
+  .blog_card-wrap {
+    padding: 4rem 16px 4rem 16px;
+  }
 
-    .blog-row {
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 0;
-        row-gap: 50px;
-    }
+  .blog-row {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+    row-gap: 50px;
+  }
 
-    .bl-ttl {
-        padding-right: 0;
-    }
+  .bl-ttl {
+    padding-right: 0;
+  }
 
-    .blog_more-btn {
-        padding: 4rem 16px 4rem;
-    }
+  .blog_more-btn {
+    padding: 4rem 16px 4rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    span.bl-dt {
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 8px;
-    }
+  span.bl-dt {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
 
-    .bl-ttl {
-        font-size: 28px;
-        line-height: 34px;
-    }
+  .bl-ttl {
+    font-size: 28px;
+    line-height: 34px;
+  }
 
-    .blog_con {
-        gap: 16px;
-    }
+  .blog_con {
+    gap: 16px;
+  }
 
-    .blog_more-btn {
-        padding: 0rem 16px 4rem;
-    }
+  .blog_more-btn {
+    padding: 0rem 16px 4rem;
+  }
 
-    .blog_more-btn button {
-        font-size: 18px;
-        line-height: 32px;
-        padding: 12px 30px;
-    }
+  .blog_more-btn button {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 12px 30px;
+  }
 }
