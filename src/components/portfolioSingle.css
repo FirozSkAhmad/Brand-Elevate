@@ -123,7 +123,7 @@
   animation: shimmer 3s infinite linear;
   background: linear-gradient(to right, #eeeeee 20%, #dddddd 40%, #eeeeee 60%);
   border-radius: 24px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .port_sn-text {

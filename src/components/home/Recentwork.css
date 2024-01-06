@@ -2,12 +2,14 @@
   position: relative;
   padding: 6rem 10rem 0;
 }
+
 .rec_Sec {
   margin-top: 7rem;
   display: flex;
   flex-direction: column;
   gap: 42px;
 }
+
 .rec_Rw-wrap {
   width: 100%;
   display: grid;
@@ -19,32 +21,36 @@
 .rec_Content {
   border: 1px solid #282828;
   border-radius: 24px;
-  height: 70vh;
+  /* height: 70vh; */
   overflow: hidden;
 }
 
 .rec_Img {
-  width: 100%;
-  height: 80%;
-  background-color: #bdbdbd;
+  /* width: 100%; */
+  /* height: 80%; */
+  /* background-color: #bdbdbd; */
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
+
 .rec_Img img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
+
 .rec_Ttl {
-  width: 100%;
-  height: 20%;
+  /* width: 100%; */
+  /* height: 20%; */
   display: flex;
   align-items: center;
-  padding-left: 2vw;
+  padding: 53px;
+  /* padding-left: 2vw; */
   /* background-color: black; */
 }
+
 .rec_Ttl a {
   font-family: Inter;
   font-size: 37px;
@@ -96,6 +102,7 @@
   0% {
     background-position: -1000px 0;
   }
+
   100% {
     background-position: 1000px 0;
   }
@@ -108,14 +115,22 @@
 }
 
 .shimmer-effect .rec_Ttl .card_title {
-  height: 40%; /* Adjust to match the height of your actual title */
-  width: 80%; /* Adjust to match the width of your actual title */
-  border-radius: 4px; /* Optional: for rounded corners */
+  height: 40%;
+  /* Adjust to match the height of your actual title */
+  width: 80%;
+  /* Adjust to match the width of your actual title */
+  border-radius: 4px;
+  /* Optional: for rounded corners */
   background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
   animation: shimmer 2.5s infinite;
 }
 
 @media only screen and (max-width: 1680px) {
+
+  .rec_Ttl {
+    padding: 40px;
+  }
+
   .recent_Work-wrap {
     padding: 6rem 6rem 0;
   }
@@ -153,6 +168,7 @@
   .rec_Sec {
     margin-top: 4rem;
   }
+
   .rec_Rw-wrap {
     grid-template-columns: repeat(1, 1fr);
     column-gap: 0;
@@ -163,6 +179,14 @@
 @media only screen and (max-width: 600px) {
   .rec_Sec {
     margin-top: 24px;
+  }
+
+  .rec_Ttl {
+    padding: 24px;
+  }
+
+  .rec_Btn {
+    font-size: 18px;
   }
 
   .rec_Ttl a {

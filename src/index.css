@@ -18,6 +18,10 @@ html {
     cursor: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 [data-cursor] {
     border-radius: 50%;
     z-index: 9999;
