@@ -11,7 +11,7 @@ import Team from "./components/team/Team";
 import ContactUs from "./components/contact/ContactUs";
 import PortfolioSingle from "./components/PortfolioSingle";
 import BlogPost from "../src/components/BlogPost";
-import SharedState from "../src/context/sharedState";
+import SharedState from "../src/context/SharedState";
 
 // import ScrollToTop from "./components/ScrollToTop";
 
